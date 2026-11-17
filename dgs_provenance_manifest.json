@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-11-17T17:43:29.977508+00:00",
+  "created_utc": "2026-11-17T19:33:34.292940+00:00",
   "api_endpoint": "https://archive-api.open-meteo.com/v1/archive",
   "model_requested": "era5",
   "years": [
@@ -62,9 +62,9 @@
       "role": "campus"
     },
     "pot": {
-      "name": "South West REZ wind zone near Hay (approximate)",
-      "lat": -34.43,
-      "lon": 145.25,
+      "name": "Pottinger project-area reference (AIA WMT #1; not surveyed turbine centroid)",
+      "lat": -34.98465556,
+      "lon": 144.97216944,
       "role": "wind"
     },
     "yan": {
@@ -100,8 +100,8 @@
     "cloud_cover": "cloud_cover_pct"
   },
   "output_file": "dgs_era5_hourly.csv.gz",
-  "output_sha256_gzip": "b969c2cabd229e43cdbc473d44d4e086f58e08ee5961f61849d2793bfd0f1d0b",
-  "output_sha256_uncompressed_csv": "da56fe294e1b1db1387fc5c80dd9721751731430074e951615a033faf22e85e0",
+  "output_sha256_gzip": "48731f467b51b0ef3a4afbac6bb286a4824375cb1cf41beb40ae34faed31e4f5",
+  "output_sha256_uncompressed_csv": "72d600d55da8df369506a1331ae0d45ee7b30b215191c281b674f200ea912b0e",
   "downloads": [
     {
       "site": "mil",
@@ -1354,210 +1354,210 @@
     {
       "site": "pot",
       "year": 2010,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8760,
       "dropped_feb29_hours": 0,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2010_882e495b251e.json.gz",
-      "raw_api_sha256": "fc70d1670cc96e8629c6287936a1a8a00419d23112d8e4538dbaaa2cbb0d7ca6",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2010-01-01&end_date=2010-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2010_ed16b2d64e76.json.gz",
+      "raw_api_sha256": "011735839b777a65ce48cbda476aa1540efdf11f648248c56a6766b2906a17a8",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2010-01-01&end_date=2010-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2011,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8760,
       "dropped_feb29_hours": 0,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2011_c101cf1f94c1.json.gz",
-      "raw_api_sha256": "c9c3576d305f5bb8b92e853d75e848eb528bd2a7897a6438d6df9417da0d88cb",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2011-01-01&end_date=2011-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2011_d8e75b567a78.json.gz",
+      "raw_api_sha256": "57b52fff29096f416c7896b5cb2ba519a227896c3d62a429326b942e232c6a82",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2011-01-01&end_date=2011-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2012,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8784,
       "dropped_feb29_hours": 24,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2012_05d62eb266a8.json.gz",
-      "raw_api_sha256": "ca0711598796594b5f0040c7f858a3624bd16d7b42b493c27f0695c64a10a9c3",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2012-01-01&end_date=2012-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2012_7612a7d9bd5d.json.gz",
+      "raw_api_sha256": "481fe790b709a9f1724bd52fa68da0428cb01244841561eb656906935200ba1e",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2012-01-01&end_date=2012-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2013,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8760,
       "dropped_feb29_hours": 0,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2013_c85fac71153e.json.gz",
-      "raw_api_sha256": "87f1793f54f4cf3de326c1b28a01468d83f5820c2640219d0b72c700533ff773",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2013-01-01&end_date=2013-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2013_068f21591ebf.json.gz",
+      "raw_api_sha256": "d2935022fa3248176ea2937d2e6fc906ed82f66b3260bc53c7f8b9b87b84094b",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2013-01-01&end_date=2013-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2014,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8760,
       "dropped_feb29_hours": 0,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2014_d8b3fec01517.json.gz",
-      "raw_api_sha256": "3a9a5c793dda71adc648653c07343bec083c23e11de20d8848f1942edf8fe551",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2014-01-01&end_date=2014-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2014_3fa4a604f176.json.gz",
+      "raw_api_sha256": "da9bf6a13dbfe39a194e2d071d7cd617a1d2b1f56468911f94a4a002d83889ec",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2014-01-01&end_date=2014-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2015,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8760,
       "dropped_feb29_hours": 0,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2015_bdaa25db22bb.json.gz",
-      "raw_api_sha256": "1dd5e4d4e007257821914478e0083390344a3e82c2f74c8b2a1d829eab38d742",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2015-01-01&end_date=2015-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2015_21c3bab0ee72.json.gz",
+      "raw_api_sha256": "dcc36af3ea89e9477eccbb959c764933999f52894e40aaa46a59b0145e439e12",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2015-01-01&end_date=2015-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2016,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8784,
       "dropped_feb29_hours": 24,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2016_5731e54dc1d9.json.gz",
-      "raw_api_sha256": "a3707ea60ee02df1ff40f7ec2c5746f8ac5a2244b22edad79cc46f98cafcc1da",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2016-01-01&end_date=2016-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2016_a829dc2d14e8.json.gz",
+      "raw_api_sha256": "6cb4a4ad57b567cf4934ad876d6fa1661418d0a1180c401a877b17c806516eb0",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2016-01-01&end_date=2016-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2017,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8760,
       "dropped_feb29_hours": 0,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2017_646720469c73.json.gz",
-      "raw_api_sha256": "9b5c9c924a081a2ba2274f991bc15577f7aa1565d055d2fe9581fc72330012e0",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2017-01-01&end_date=2017-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2017_6f834da36e8e.json.gz",
+      "raw_api_sha256": "f17dea1dfef0a8e14d30a49c5e52f3fdb913ec6b00d62d1ecca7e9ed6dd277ca",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2017-01-01&end_date=2017-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2018,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8760,
       "dropped_feb29_hours": 0,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2018_e7a4c72f3a50.json.gz",
-      "raw_api_sha256": "a9c6d3f905ca27b63ff6b39e818da0e1c6fcb1f06670dfad1735b14b5928ed6a",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2018-01-01&end_date=2018-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2018_eea58db2d151.json.gz",
+      "raw_api_sha256": "97ccd8638d13a6207614485589d65d56b7d4641696458f0b5f210335df7b3954",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2018-01-01&end_date=2018-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2019,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8760,
       "dropped_feb29_hours": 0,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2019_430a1f871b0d.json.gz",
-      "raw_api_sha256": "6ae951bc45abb99f7faf8edfb3537ea41baefe3b07ee909970fb6638f6eceb6e",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2019-01-01&end_date=2019-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2019_f41ef7da7797.json.gz",
+      "raw_api_sha256": "c02e91f71afd070f345f1a04f60083d19e438e86ddf8157bfc0b9b7130fbe31b",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2019-01-01&end_date=2019-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2020,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8784,
       "dropped_feb29_hours": 24,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2020_225b975ff414.json.gz",
-      "raw_api_sha256": "ca432c833c30bb1277452a44790f1e3f0284b77210efc0d0dc715102f0bdafd1",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2020-01-01&end_date=2020-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2020_0794c6e56141.json.gz",
+      "raw_api_sha256": "4425b60248414f7c2721fcbad063f6a71576e2218b77bc36200f283d42898795",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2020-01-01&end_date=2020-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2021,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8760,
       "dropped_feb29_hours": 0,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2021_7598894f4dc2.json.gz",
-      "raw_api_sha256": "4e1c17856400d08b8a2de4905032514c4533f55465039b3203dcb70a3beac515",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2021-01-01&end_date=2021-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2021_5bbfc0106289.json.gz",
+      "raw_api_sha256": "ec205b0bbf9ce4900bc34712de581ec3758535d470830355b35f54a03ea81f5a",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2021-01-01&end_date=2021-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2022,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8760,
       "dropped_feb29_hours": 0,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2022_02467c2e47a8.json.gz",
-      "raw_api_sha256": "6e806c084025c904b20df79d16f705af2965c252b31b820931fae317f90354e6",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2022-01-01&end_date=2022-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2022_433437992b12.json.gz",
+      "raw_api_sha256": "fdb76a3dc38584020af16c52789fc9f3f772e4a3ee3454e823d45c6aaaa8089d",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2022-01-01&end_date=2022-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2023,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8760,
       "dropped_feb29_hours": 0,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2023_62c0288d377e.json.gz",
-      "raw_api_sha256": "1b550afcf79c185daf1283756690f1d2884150641072c8d3fb91b0055634bf81",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2023-01-01&end_date=2023-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2023_3eb5bd0ed48a.json.gz",
+      "raw_api_sha256": "4562baf7661331d5b5c954940a9a4fe949558d12c20c2da2bd091eba1c0af97a",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2023-01-01&end_date=2023-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2024,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8784,
       "dropped_feb29_hours": 24,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2024_0fa03db89168.json.gz",
-      "raw_api_sha256": "fa85b8fb0f8a70dd6c748bcc143e97c84e41dd457d1e839d3da89829b785df47",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2024-01-01&end_date=2024-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2024_868404a191b5.json.gz",
+      "raw_api_sha256": "ba3200f13895a3573be24f5cdb552ce0d17655977d0f42c4722143437cd68574",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2024-01-01&end_date=2024-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "pot",
       "year": 2025,
-      "returned_grid_lat": -34.5,
-      "returned_grid_lon": 145.25,
-      "returned_grid_elevation_m": 100.0,
+      "returned_grid_lat": -35.0,
+      "returned_grid_lon": 145.0,
+      "returned_grid_elevation_m": 95.0,
       "raw_hours": 8760,
       "dropped_feb29_hours": 0,
       "model_hours": 8760,
-      "raw_file": "dgs_raw_pot_2025_2f42e5deee13.json.gz",
-      "raw_api_sha256": "e373c37d4cb3530fb484cc76c77a09ba06644b29f38d8ba8c28bb90d1cfe6243",
-      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.43&longitude=145.25&start_date=2025-01-01&end_date=2025-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
+      "raw_file": "dgs_raw_pot_2025_9006d1fb24b9.json.gz",
+      "raw_api_sha256": "baac083261bb0fff0671d9531dd1d8852979074ab854acfa5681e91072453708",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.98465556&longitude=144.97216944&start_date=2025-01-01&end_date=2025-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     },
     {
       "site": "yan",
@@ -2183,5 +2183,35 @@
       "raw_api_sha256": "561d06ae7bd915c1c9ce8e59715c7bf5109a3a251f09f9b339492f1a9a3536c9",
       "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-37.82&longitude=144.78&start_date=2025-01-01&end_date=2025-12-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m%2Cwind_speed_100m%2Cwind_direction_100m%2Cshortwave_radiation%2Cdirect_normal_irradiance%2Cdiffuse_radiation%2Csurface_pressure%2Cprecipitation%2Ccloud_cover&models=era5&timezone=GMT&timeformat=unixtime&wind_speed_unit=ms&temperature_unit=celsius&precipitation_unit=mm&cell_selection=nearest&elevation=nan"
     }
-  ]
+  ],
+  "pottinger_coordinate_revision": {
+    "previous_site": {
+      "name": "South West REZ wind zone near Hay (approximate)",
+      "lat": -34.43,
+      "lon": 145.25,
+      "role": "wind"
+    },
+    "revised_site": {
+      "name": "Pottinger project-area reference (AIA WMT #1; not surveyed turbine centroid)",
+      "lat": -34.98465556,
+      "lon": 144.97216944,
+      "role": "wind"
+    },
+    "coordinate_source": "NSW Pottinger Wind Farm Aviation Impact Assessment, May 2024, meteorological mast WMT #1 (approximate weather reference point)",
+    "source_url": "https://majorprojects.planningportal.nsw.gov.au/prweb/PRRestService/mp/01/getContent?AttachRef=SSD-59235464%2120240516T072435.561+GMT",
+    "note": "Single project-area reference mast, not a wind-farm centroid; data is ERA5 reanalysis, not anemometry at the mast.",
+    "unchanged_weather_site_keys": [
+      "mil",
+      "irc",
+      "mwd",
+      "rob",
+      "swh",
+      "ker",
+      "yan",
+      "eac",
+      "lav"
+    ],
+    "previous_output_sha256_gzip": "b969c2cabd229e43cdbc473d44d4e086f58e08ee5961f61849d2793bfd0f1d0b",
+    "new_output_sha256_gzip": "48731f467b51b0ef3a4afbac6bb286a4824375cb1cf41beb40ae34faed31e4f5"
+  }
 }

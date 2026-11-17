@@ -36,7 +36,7 @@ SITES = {
     "rob": dict(name="Robinvale / Euston campus group", lat=-34.584, lon=142.768, role="campus"),
     "swh": dict(name="Swan Hill / Nyah campus group", lat=-35.339, lon=143.559, role="campus"),
     "ker": dict(name="Kerang / Koondrook campus group", lat=-35.734, lon=143.919, role="campus"),
-    "pot": dict(name="South West REZ wind zone near Hay (approximate)", lat=-34.43, lon=145.25, role="wind"),
+    "pot": dict(name="Pottinger project-area reference (AIA WMT #1; not surveyed turbine centroid)", lat=-34.98465556, lon=144.97216944, role="wind"),
     "yan": dict(name="South West REZ wind zone near Jerilderie (approximate)", lat=-35.29, lon=145.66, role="wind"),
     "eac": dict(name="Eastern Creek, western Sydney (metropolitan comparator)", lat=-33.80, lon=150.85, role="comparator"),
     "lav": dict(name="Laverton North, western Melbourne (metropolitan comparator)", lat=-37.82, lon=144.78, role="comparator"),

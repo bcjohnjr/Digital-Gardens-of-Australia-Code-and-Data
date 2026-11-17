@@ -267,6 +267,84 @@ t0 = time.time()
 ACC, UNS, ENGY, TR = run()
 runtime = time.time() - t0
 
+
+# ------------------------------------------------------------------ campus-constrained sensitivity (six nodes)
+# Each campus balances its own solar, battery share and load behind its own import/export limit (a multiple of
+# its peak load); contracted wind and grid imports meet the pooled campus imports through the 600-MW aggregate
+# interface. Batteries charge only from local solar (conservative). Migratable IT (15%) above a campus limit
+# moves to campuses with spare limit headroom; the rest falls to that campus's engines.
+NODAL = []
+for pf, nm in (("balanced", "central"), ("high_re", "central"), ("balanced", "combined_adverse")):
+    j0 = next(j for j, s_ in enumerate(scen) if s_["it"] == P.IT_MW and s_["pf"] == pf and s_["name"] == nm)
+    for f_ in P.CAMPUS_LIMIT_FACTORS:
+        if nm == "combined_adverse" and f_ != 1.0:
+            continue
+        NODAL.append((j0, f_))
+
+
+def run_nodal():
+    Sn = len(NODAL); J = np.array([j for j, _ in NODAL]); F = np.array([f for _, f in NODAL])
+    Ln = Lc[J]; lim = F[:, None] * Ln.max(axis=2)
+    bEc = bE[J][:, None] * shares[None, :]; bPc = bP[J][:, None] * shares[None, :]; soc_c = 0.5 * bEc
+    solar = cap["solar"][J][:, None] * shares[None, :] * psc[J][:, None]; windc = cap["wind"][J] * wsc[J]
+    impc = impcap[J]; ecap_c = eng_cap_c[J]; itc = ITc[J]; outs = outsel[J]
+    bst = np.full(Sn, 0.5 * bg_cap); bud = np.full(Sn, budget_y)
+    acc = {k: np.zeros(Sn) for k in ["load", "uns", "uns_isl", "imp", "exp", "curt", "wgen", "pgen", "eng", "bd", "bg", "bg_over",
+                                      "bdis", "impcost", "exprev", "moved", "isl_hours", "lim_hours"]}
+    uns_t = np.zeros((Sn, NH), dtype=np.float32); eng_y = np.zeros((Sn, Y))
+    for t in range(NH):
+        if t % P.HPY == 0:
+            bud[:] = budget_y
+        isl = np.where(outs[:, None] == 2, OUT2[None, :, t], OUT[None, :, t])
+        Lt = Ln[:, :, t]; limt = np.where(isl, 0.0, lim)
+        pv = solar * PVc[None, :, t]
+        n = pv - Lt
+        ch = np.where(n > 0, np.minimum(np.minimum(n, bPc), (bEc - soc_c) / sq), 0.0); soc_c += ch * sq; n = n - ch
+        dis = np.where(n < 0, np.minimum(np.minimum(-n, bPc), soc_c * sq), 0.0); soc_c -= dis / sq; n = n + dis
+        sur = np.clip(n, 0, None); dfc = np.clip(-n, 0, None)
+        e_c = np.minimum(sur, limt); cu_loc = (sur - e_c).sum(1)
+        i_c = np.minimum(dfc, limt); over = dfc - i_c
+        mig = np.minimum(over, P.FLEX_SHARE * itc)
+        head = np.clip(limt - i_c, 0, None).sum(1)
+        msum = mig.sum(1); sc_m = np.where(msum > head, np.divide(head, msum, out=np.zeros(Sn), where=msum > 0), 1.0)
+        mig = mig * sc_m[:, None]; over = over - mig
+        e_isl = np.minimum(over, ecap_c)                                   # campus engines
+        pool = windc * W[t] + e_c.sum(1) - i_c.sum(1) - mig.sum(1)
+        ex = np.minimum(np.clip(pool, 0, None), P.EXPORT_CAP_MW * aexp[t]); cu = np.clip(pool, 0, None) - ex + cu_loc
+        need = np.clip(-pool, 0, None)
+        im = np.minimum(need, impc * aimp[t]); need = need - im
+        e_net = np.minimum(need, np.clip(ecap_c - e_isl, 0, None).sum(1))
+        e_req = e_net + e_isl.sum(1)
+        bst += BG_MWH_H; ov = np.clip(bst - bg_cap, 0, None); bst -= ov
+        Fu = e_req / P.ENG_ELEC_EFF; G = np.minimum((1 - P.BD_PILOT_MIN) * Fu, bst); Dd = Fu - G
+        sc_ = np.where(Dd > bud, np.divide(bud, Dd, out=np.zeros(Sn), where=Dd > 0), 1.0); Dd = Dd * sc_; G = np.minimum(G, Dd * gmax)
+        eng = (Dd + G) * P.ENG_ELEC_EFF; frac = np.divide(eng, e_req, out=np.ones(Sn), where=e_req > 0)
+        bud -= Dd; bst -= G
+        u_isl = (over - e_isl * frac[:, None]).sum(1); u_net = need - e_net * frac; uns = u_isl + u_net
+        p_ = price[t]
+        acc["load"] += Lt.sum(1); acc["uns"] += uns; acc["uns_isl"] += u_isl; acc["imp"] += im; acc["exp"] += ex; acc["curt"] += cu
+        acc["wgen"] += windc * W[t]; acc["pgen"] += pv.sum(1); acc["eng"] += eng; acc["bd"] += Dd; acc["bg"] += G; acc["bg_over"] += ov
+        acc["bdis"] += dis.sum(1); acc["impcost"] += im * (p_ + P.NET_CHARGE_AUD_MWH); acc["exprev"] += ex * p_
+        acc["moved"] += mig.sum(1); acc["isl_hours"] += isl.sum(1); acc["lim_hours"] += (dfc > limt + 1e-9).any(1)
+        uns_t[:, t] = uns; eng_y[:, t // P.HPY] += Dd
+    return acc, uns_t, eng_y
+
+
+t1 = time.time()
+ACCn, UNSn, ENGYn = run_nodal()
+runtime_nodal = time.time() - t1
+J_ = np.array([j for j, _ in NODAL])
+for k in ACC:
+    ACC[k] = np.concatenate([ACC[k], ACCn[k]])
+LIMH = np.concatenate([np.zeros(S), ACCn["lim_hours"]])
+UNS = np.concatenate([UNS, UNSn]); ENGY = np.concatenate([ENGY, ENGYn])
+for k in cap:
+    cap[k] = np.concatenate([cap[k], cap[k][J_]])
+bE = np.concatenate([bE, bE[J_]]); bP = np.concatenate([bP, bP[J_]]); impcap = np.concatenate([impcap, impcap[J_]])
+eng_cap = np.concatenate([eng_cap, eng_cap[J_]])
+for j, f_ in NODAL:
+    scen.append(dict(scen[j], name=f"{scen[j]['name']}_campus{int(round(f_ * 100))}", trace=False))
+
 grid_f = P.GRID_T_PER_MWH["VIC"]
 results = []
 for j, s in enumerate(scen):
@@ -297,6 +375,7 @@ for j, s in enumerate(scen):
         imp_cost_m=a["impcost"] / Y / 1e6, exp_rev_m=a["exprev"] / Y / 1e6,
         eng_fuel_cost_m=(uco_L * (P.UCO_AUD_L / P.UCO_YIELD + P.UCO_CONV_AUD_L) + mkt_L * P.MARKET_BD_AUD_L + bg_MJ * P.BIOGAS_AUD_GJ / 1e3) / 1e6,
         renewable_share=(a["wgen"] + a["pgen"] - a["exp"] - a["curt"]) / a["load"],
+        campus_limit_hours_y=float(LIMH[j]) / Y, moved_gwh=a["moved"] / 1e3 / Y,
     ))
 
 
@@ -319,7 +398,7 @@ for m in P.METRO:
     pm = P.PUE_BASE + P.PUE_COOL_A + P.PUE_COOL_SLOPE * np.clip(Tm - 18.0, 0, None) + P.PUE_TRIM_SLOPE * np.clip(Tm - 32.0, 0, None)
     metro[m["key"]] = dict(pue_mean=float(pm.mean()), T_mean=float(Tm.mean()), T_max=float(Tm.max()), hours_gt35=int((Tm > 35).sum() / Y))
 out = dict(
-    mode=MODE, proxy=PROXY, weather_source=str(EW["source"]), runtime_s=runtime, scenarios=results,
+    mode=MODE, proxy=PROXY, weather_source=str(EW["source"]), runtime_s=runtime, runtime_nodal_s=runtime_nodal, scenarios=results,
     it_mw=P.IT_MW, pop=P.POP, campus=[dict(c, it_mw=P.IT_MW * c["share"]) for c in P.CAMPUSES],
     fac_twh=twh(FAC_c), it_twh=P.IT_MW * P.HPY / 1e6, pue_mean=float(FAC_c.sum() / (P.IT_MW * NH)),
     pue_campus=(FAC_c.mean(1) / (P.IT_MW * shares)).tolist(), pue_max=float(pue.max()),

@@ -100,6 +100,15 @@ for pf in P.PORTFOLIOS:
         N["portfolio_rows"].append({k: s[k] for k in ("portfolio", "scenario", "solar_mw", "wind_mw", "batt_mw", "batt_mwh", "load_twh", "imp_twh", "exp_twh",
                                                        "curt_twh", "eng_gwh", "bd_ML", "bd_ML_max_year", "unserved_mwh_16y", "ep_peak_mw", "ep_hours",
                                                        "gross", "renewable_share", "engine_mw", "imp_cost_m", "exp_rev_m", "eng_fuel_cost_m", "unserved_share")})
+N["nodal_rows"] = []
+for s_ in R["scenarios"]:
+    if "_campus" in s_["scenario"]:
+        base = S[(IT, s_["portfolio"], s_["scenario"].split("_campus")[0])]
+        N["nodal_rows"].append(dict(portfolio=s_["portfolio"], scenario=s_["scenario"], base=base["scenario"],
+                                    limit_pct=int(s_["scenario"].split("_campus")[1]), imp=s_["imp_twh"], exp=s_["exp_twh"], curt=s_["curt_twh"],
+                                    eng=s_["eng_gwh"], bd=s_["bd_ML"], uns=s_["unserved_mwh_16y"], uns_share=s_["unserved_share"],
+                                    re=s_["renewable_share"], gross=s_["gross"], net=s_["gross"] - cred, base_gross=base["gross"],
+                                    base_imp=base["imp_twh"], lim_hours=s_["campus_limit_hours_y"], moved=s_["moved_gwh"]))
 N["it_rows"] = []
 for it in P.IT_SCENARIOS:
     for sc in ("central", "combined_adverse"):

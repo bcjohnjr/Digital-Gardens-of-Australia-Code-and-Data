@@ -1,4 +1,4 @@
-# Digital Gardens Sunraysia — model code and data (v2.0.0)
+# Digital Gardens Sunraysia — model code and data (v2.1.0)
 
 Repository: https://github.com/bcjohnjr/Digital-Gardens-of-Australia-Code-and-Data
 

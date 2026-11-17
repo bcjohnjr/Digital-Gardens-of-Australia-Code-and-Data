@@ -40,7 +40,7 @@ CKEYS = [c["key"] for c in CAMPUSES]
 # ---------------------------------------------------------------- weather sites (ERA5 via Open-Meteo)
 # 6 campuses + 2 South West REZ wind zones (approximate locations of contracted wind) + 2 metropolitan comparators
 WIND_ZONES = [
-    dict(key="POT", name="Pottinger area, near Hay (NSW South West REZ)", lat=-34.43, lon=145.25),
+    dict(key="POT", name="Pottinger project area, Booroorban, ~60 km south of Hay (met mast WMT 1)", lat=-34.98465556, lon=144.97216944),
     dict(key="YAN", name="Yanco Delta area, near Jerilderie (NSW South West REZ)", lat=-35.29, lon=145.66),
 ]
 METRO = [
@@ -75,6 +75,7 @@ BATT_HOURS = 4.0
 BATT_RTE = 0.85
 IMPORT_CAP_MW = 600.0                  # firm import right of the network (fixed; does not scale with IT)
 EXPORT_CAP_MW = 600.0
+CAMPUS_LIMIT_FACTORS = (1.0, 0.8)      # campus-constrained sensitivity: each campus's import/export limit as a multiple of its own peak load
 ENGINE_COVER = 1.10                    # standby engines sized at 110% of each campus's peak facility load
 # grid availability events (synthetic, fixed seed)
 CAMPUS_OUTAGES_PER_Y = 1.5             # complete loss of supply to one campus, 1-12 h

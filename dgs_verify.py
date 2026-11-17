@@ -43,6 +43,9 @@ def headline(mode):
         k = f"{r['portfolio']}_{r['scenario']}"
         v[f"{k}_gross"] = r["gross"]; v[f"{k}_imp_TWh"] = r["imp_twh"]; v[f"{k}_unserved_MWh"] = r["unserved_mwh_16y"]
         v[f"{k}_biodiesel_ML"] = r["bd_ML"]
+    for r in N["nodal_rows"]:
+        k = f"{r['portfolio']}_{r['scenario']}"
+        v[f"{k}_gross"] = r["gross"]; v[f"{k}_unserved_MWh"] = r["uns"]; v[f"{k}_imp_TWh"] = r["imp"]
     for r in N["it_rows"]:
         k = f"it{r['it']:.0f}_{r['scenario']}"
         v[f"{k}_gross"] = r["gross"]; v[f"{k}_unserved_share"] = r["uns_share"]; v[f"{k}_re_share"] = r["re"]

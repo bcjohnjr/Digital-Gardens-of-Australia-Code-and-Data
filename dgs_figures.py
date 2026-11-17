@@ -178,7 +178,7 @@ c1.set_title("(a) Supply mix as the network grows", loc="left")
 c2.bar(x - 0.18, [r["uns_share"] * 100 for r in rows], width=0.36, color=C["violet"], label="Unserved, central")
 c2.bar(x + 0.18, [r["uns_share"] * 100 for r in adv], width=0.36, color=C["red"], label="Unserved, combined adverse")
 c2.set_xticks(x); c2.set_xticklabels(lab, fontsize=7); c2.set_ylabel("% of load unserved"); c2.legend(fontsize=7)
-c2.set_title(f"(b) Adequacy behind a fixed {P.IMPORT_CAP_MW:.0f}-MW import right", loc="left")
+c2.set_title(f"(b) Adequacy behind an assumed {P.IMPORT_CAP_MW:.0f}-MW import limit", loc="left")
 fig.tight_layout(); save(fig, "fig6_it_scale")
 
 # ------------------------------------------------------------------ Figure 7: heat by month
