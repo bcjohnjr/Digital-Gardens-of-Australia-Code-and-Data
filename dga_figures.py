@@ -290,7 +290,7 @@ start = int(np.argmin(roll[: len(roll) - win]))
 s = slice(start, start + win)
 hrs = np.arange(win) / 24
 stack = [("wind", "Wind", C["blue"]), ("pv", "Solar PV", C["yellow"]), ("bdis", "Battery discharge", C["aqua"]),
-         ("hvo", "Renewable-diesel engines", C["orange"]), ("imp", "Grid imports", C["violet"])]
+         ("hvo", "Biodiesel-biogas engines", C["orange"]), ("imp", "Grid imports", C["violet"])]
 fig, ax = plt.subplots(figsize=(7.4, 3.4))
 bot = np.zeros(win)
 for k, nm, col in stack:

@@ -150,7 +150,28 @@ TRUCK_L_PER_KM = 0.50                    # diesel prime mover displaced
 DIESEL_KG_PER_L = 2.71                   # NGA diesel ~70.2 kg/GJ x 38.6 GJ/kL
 ERS_CAPEX_AUD_M_PER_KM = (2.5, 4.2)      # ITF EUR1.5-2.5 M/km two lanes, converted
 
-EV_CHARGE_GWH = 30.0                     # free community EV charging (illustrative)
+EV_CHARGE_GWH = 30.0                     # legacy value; replaced by the vehicle programme below
+# ---------------------------------------------------------------- community vehicle & fuel-parity programme
+VEH_PER_HH = 1.0                         # one free EV or plug-in hybrid per enrolled household
+VEH_EV_SHARE = 0.70                      # 70% battery-electric, 30% plug-in hybrid
+VEH_EV_AUD = 40_000.0; VEH_PHEV_AUD = 35_000.0
+VEH_LIFE_Y = 10.0
+VEH_KM_Y = 12_000.0
+EV_KWH_KM = 0.18; PHEV_KWH_KM = 0.20; PHEV_E_SHARE = 0.50; PHEV_L_100KM = 5.5
+CHARGER_AUD = 2_000.0                    # home charger installed
+CHARGE_LOSS = 0.10
+FARM_FUEL_ML = 60.0                      # enrolled farms' diesel switched to renewable diesel / biodiesel
+PARITY_GAP_AUD_L = (0.25, 0.45, 0.80)    # renewable minus fossil price after fuel-tax credits, A$/L
+HEAT_CONNECT_AUD = 15_000.0              # per connected dwelling (low-temperature loop branch + HIU)
+ASP_N_DW = 0.04                          # Asparagopsis tissue N, share of dry weight (scrubber N uptake)
+FEED_N = 0.072                           # fish feed N (45% protein / 6.25)
+FISH_N_RETAIN = 0.30                     # share of feed N retained in fish
+# ---------------------------------------------------------------- GPU rental premium
+GPU_KW = 14.3 / 8                        # DGX B200 maximum system power per GPU, kW (conservative: fewer GPUs per MW)
+GPU_UTIL = 0.70                          # share of installed GPU-hours sold
+GPU_PRICE_USD_H = {"H100": 2.88, "H200": 3.48, "B200": 6.45, "B300": 7.53}   # Silicon Data indices, 24 Oct 2026
+USD_PER_AUD = 0.65
+WTP_PREMIUM = 0.097                      # PwC 2024 Voice of the Consumer: average willingness to pay
 
 # ---------------------------------------------------------------- heat pumps
 HP_COP = 3.5
@@ -172,11 +193,36 @@ SMR_FOR = 0.03
 SMR_REFUEL_DAYS = 30
 SMR_CYCLE_MONTHS = 24
 
-HVO_ANNUAL_ML = 800.0                    # fleet renewable-diesel supply ceiling, ML/y
-HVO_MJ_PER_L = 36.51
-HVO_ELEC_EFF = 0.54
-HVO_G_PER_MJ = 25.0
-HVO_AUD_PER_L = 2.40
+# ---------------------------------------------------------------- dual-fuel engines: biodiesel pilot + biogas
+# Variable names keep the historical "HVO_" prefix so that downstream code is unchanged; the fuel is
+# now waste-oil biodiesel (B100) co-combusted with digester biogas in dual-fuel reciprocating engines.
+HVO_ANNUAL_ML = 800.0                    # fleet biodiesel supply ceiling, ML/y (feedstock-limited; see text)
+HVO_MJ_PER_L = 34.6                      # NGA biodiesel energy content, GJ/kL
+HVO_ELEC_EFF = 0.48                      # large dual-fuel reciprocating engine, electrical efficiency (LHV)
+BD_PILOT_MIN = 0.33                      # biodiesel never below 33% of fuel energy; biogas up to 67%
+UCO_ML = 60.0                            # used-cooking-oil purchase programme, ML/y collected (~half national UCO)
+UCO_AUD_L = 1.25                         # A$/L paid to restaurants, food processors, councils
+UCO_CONV_AUD_L = 0.40                    # A$/L biodiesel transesterification cost
+UCO_YIELD = 0.95                         # L biodiesel per L UCO
+UCO_G_PER_MJ = 14.0                      # EU RED Annex V default, waste vegetable/animal oil biodiesel
+TALLOW_G_PER_MJ = 20.0                   # conservative allowance for rendered tallow biodiesel
+TALLOW_BD_AUD_L = 2.00                   # A$/L delivered B100 from tallow (market purchase)
+HVO_G_PER_MJ = 17.0                      # fleet-average placeholder; recomputed from UCO/tallow mix in model
+HVO_AUD_PER_L = 1.90                     # fleet-average placeholder; recomputed in model
+BIOGAS_STORE_DAYS = 5.0                  # days of digester output held in low-pressure gas holders per hub
+BIOGAS_G_PER_MJ = 12.0                   # incl. digester and engine methane slip (assumption)
+BIOGAS_AUD_GJ = 25.0                     # levelised digester + storage cost per GJ biogas
+BIOMETHANE_UPGRADE_AUD_GJ = 12.0         # upgrading surplus biogas to farm vehicle fuel
+# digester feedstocks: (label, tonnes or head basis, m3 CH4 per unit, note)
+CH4_MJ_PER_M3 = 35.8
+FEEDLOT_VS_KG_HEAD_DAY = 2.0             # volatile solids excreted
+FEEDLOT_MANURE_CAPTURE = 0.50            # share recovered fresh from pads / effluent ponds
+FEEDLOT_B0 = 0.15                        # m3 CH4 per kg VS for pad-scraped manure
+FOGO_T_PER_RESIDENT = 0.15               # food & garden organics collected, t/resident-year
+FOGO_VS = 0.25; FOGO_B0 = 0.40
+GH_RESIDUE_T_PER_T = 0.25; GH_RESIDUE_VS = 0.10; GH_RESIDUE_B0 = 0.25
+RAS_SLUDGE_DM_PER_FEED = 0.25; RAS_SLUDGE_VS = 0.80; RAS_SLUDGE_B0 = 0.30
+FISH_OFFAL_SHARE = 0.40; FISH_OFFAL_VS = 0.30; FISH_OFFAL_B0 = 0.50
 BATT_RTE = 0.85
 FIRM_RESTRICT_MW = 250.0                 # per-site cap in restricted-firm stress
 

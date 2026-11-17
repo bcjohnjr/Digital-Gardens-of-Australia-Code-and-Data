@@ -101,11 +101,22 @@ def dg_with(pv=None, imp_scale=None, hvo_g=None, imp_flat=None):
         c["c_pv"] = c["c_pv"] * pv / P.PV_G_KWH
     if imp_flat is not None:
         c["c_imp"] = enl["imp_twh"] * imp_flat
-    if hvo_g is not None:
-        c["c_hvo"] = c["c_hvo"] * hvo_g / P.HVO_G_PER_MJ
+    if hvo_g is not None:   # all engine fuel (biodiesel + biogas) at a single intensity
+        c["c_hvo"] = (enl["hvo_ML"] * 1e6 * P.HVO_MJ_PER_L + enl["bg_engine_PJ"] * 1e9) * hvo_g / 1e12
     return sum(v for k, v in c.items() if k.startswith("c_"))
 N["sens_pv"] = {str(v): dg_with(pv=v) for v in [12, 37, 48]}
-N["sens_hvo"] = {str(v): dg_with(hvo_g=v) for v in [17.48, 25, 50]}
+N["sens_hvo"] = {str(v): dg_with(hvo_g=v) for v in [10, 20, 52]}
+fuel_MJ = enl["hvo_ML"] * 1e6 * P.HVO_MJ_PER_L + enl["bg_engine_PJ"] * 1e9
+N["engine_fuel_g_mj"] = enl["c_hvo"] * 1e12 / fuel_MJ
+N["fuel"] = {k: enl[k] for k in ["hvo_ML", "uco_ML", "tallow_ML", "bg_engine_PJ", "bg_surplus_PJ", "bg_share_engine",
+                                  "hvo_cost_m", "biogas_cost_m", "c_hvo", "hvo_twh", "hvo_ML_max_year"]}
+N["fuel_adv"] = {k: adv[k] for k in ["hvo_ML", "uco_ML", "tallow_ML", "bg_engine_PJ", "bg_surplus_PJ", "bg_share_engine", "hvo_ML_max_year"]}
+N["fuel_smr"] = {k: smr[k] for k in ["hvo_ML", "uco_ML", "tallow_ML", "bg_engine_PJ", "bg_surplus_PJ", "bg_share_engine"]}
+N["biogas"] = dict(pj=R["biogas_pj"], src=R["biogas_src_pj"], store_days=P.BIOGAS_STORE_DAYS,
+                   surplus_diesel_eq_ML=enl["bg_surplus_PJ"] * 1e9 / (38.6 * 1e6))
+N["scrubber"] = dict(asp_N_t=R["asp_N_t"], ras_N_t=R["ras_N_excreted_t"], share=R["asp_N_t"] / R["ras_N_excreted_t"])
+N["vehicles"] = dict(n_hh=R["n_hh"], n_veh=R["n_veh"], ev_gwh=R["ev_gwh"], phev_fuel_ML=R["phev_fuel_ML"],
+                     hh_connected=R["hh_connected"])
 N["sens_imp"] = {str(v): dg_with(imp_flat=v) for v in [0.10, 0.30, 0.80]}
 N["imp_mean_factor"] = enl["c_imp"] / enl["imp_twh"] if enl["imp_twh"] else 0
 
@@ -116,7 +127,7 @@ smr_hvo_nonelec = smr["hvo_twh"] / P.HVO_ELEC_EFF - smr["hvo_twh"]
 src_extract = heat["full"]["delivered_twh"] / (1 - P.HEAT_LOSS) - heat["full"]["hp_twh"]
 N.update(hvo_nonelec=hvo_nonelec, smr_nonelec=smr_nonelec + smr_hvo_nonelec, src_extract=src_extract)
 th = []
-for lab, gen in [("DGA enlarged, HVO engines", hvo_nonelec), ("DGA enlarged + 2.4 GW SMR", smr_nonelec + smr_hvo_nonelec),
+for lab, gen in [("DGA enlarged, dual-fuel engines", hvo_nonelec), ("DGA enlarged + 2.4 GW SMR", smr_nonelec + smr_hvo_nonelec),
                  ("Gas campus CCGT, no CCS", G[("ext", 0.0)]["nonelec"]),
                  ("Gas campus CCGT + 90% CCS penalty", G[("ext", 0.9)]["nonelec"])]:
     th.append(dict(label=lab, facility=N["E_fac"], gen=gen, unextracted=N["E_fac"] + gen - src_extract))
@@ -178,7 +189,7 @@ N["adv_extra_cost_m"] = (adv["hvo_cost_m"] + adv["imp_cost_m"] - adv["exp_rev_m"
 smr_gw = 2.4
 N["smr_capex_bn"] = smr_gw * 1e6 * P.SMR_CAPEX_AUD_KW / 1e9
 N["smr_capcharge_bn"] = N["smr_capex_bn"] * P.CAP_CHARGE
-N["smr_hvo_saving_m"] = (enl["hvo_ML"] - smr["hvo_ML"]) * P.HVO_AUD_PER_L
+N["smr_hvo_saving_m"] = enl["hvo_cost_m"] - smr["hvo_cost_m"]
 N["smr_twh"] = smr["smr_twh"]
 N["smr_cf"] = smr["smr_twh"] / (smr_gw * 8.76)
 N["smr_water_wet_Mm3"] = smr["smr_twh"] * 1e6 * P.NREL_GAL_MWH["nuclear_tower"] * P.GAL_TO_M3 / 1e6
@@ -247,11 +258,6 @@ N["capex_items_m"] = dict(glasshouse=R["gh_ha"] * 1e4 * 1200 / 1e6, ras=R["seafo
                           heat_pumps=heat["full"]["delivered_twh"] * 1e6 / 8760 * 3 * 1e3 * 800 / 1e6,
                           med=P.DESAL_M3 / 365 * 2500 / 1e6)
 N["intermediate_heat_value_m"] = (heat["full"]["delivered_twh"] - heat["full"]["parts"]["residential"]) * 3.6e6 * P.PRICE_HH_HEAT[1] / 1e6
-# overlays (illustrative, A$)
-ov_lo = dict(ev=1000 * 45000, charge=30e6 * 0.30, fuel=5e6 * 0.60, dry=100000 * 120)
-ov_hi = dict(ev=5000 * 45000, charge=150e6 * 0.30, fuel=20e6 * 0.60, dry=200000 * 120)
-N["overlay_lo_m"] = {k: v / 1e6 for k, v in ov_lo.items()}; N["overlay_hi_m"] = {k: v / 1e6 for k, v in ov_hi.items()}
-N["overlay_lo_tot"] = sum(ov_lo.values()) / 1e6; N["overlay_hi_tot"] = sum(ov_hi.values()) / 1e6
 # electricity-system cost ledger (enlarged central)
 N["fuel_trade"] = dict(hvo_cost=enl["hvo_cost_m"], imp_cost=enl["imp_cost_m"], exp_rev=enl["exp_rev_m"],
                        net=enl["hvo_cost_m"] + enl["imp_cost_m"] - enl["exp_rev_m"])
@@ -345,4 +351,4 @@ pr("fuel trade", N["fuel_trade"], N["fuel_trade_smr"])
 pr("ers", N["ers_diesel_cost_m"], N["ers_elec_cost_m"], N["ers_saving_m"], N["ers_capex_bn"], N["ers_capcharge_m"])
 pr("seaweed", N["seaweed"]); pr("drones", N["drones"])
 pr("lat", N["max_rtt_nem"], N["rtt_col_mus"], lat["MUS-WED"])
-pr("overlay", N["overlay_lo_tot"], N["overlay_hi_tot"])
+pr("fuel", N["fuel"], N["biogas"], N["scrubber"], N["vehicles"], N["engine_fuel_g_mj"])

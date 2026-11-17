@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Digital Gardens Australia: model code and ERA5 input data"
+version: 1.1.0
+date-released: 2026-11-17
+authors:
+  - family-names: Bily
+    given-names: Jonathan Karl
+    orcid: "https://orcid.org/0009-0004-3526-7271"
+repository-code: "https://github.com/bcjohnjr/Digital-Gardens-of-Australia-Code-and-Data"
+license: MIT
+keywords:
+  - data centres
+  - renewable energy
+  - heat recovery
+  - ERA5
+  - Australia
+references:
+  - type: article
+    title: "The ERA5 global reanalysis"
+    authors:
+      - family-names: Hersbach
+        given-names: Hans
+    journal: "Quarterly Journal of the Royal Meteorological Society"
+    year: 2020
+    doi: 10.1002/qj.3803

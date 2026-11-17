@@ -199,8 +199,28 @@ drone_mwh = (parcels * P.DRONE_KWH_PER_DELIVERY + H * P.DRONE_INSPECT_PER_HUB * 
 day_prof = np.where((hr >= 7) & (hr < 18), 1.0, 0.05); day_prof /= day_prof.mean(1, keepdims=True)
 DRONE = (drone_mwh * shares / P.HPY)[:, None] * day_prof
 ev_prof = 0.4 + np.exp(-0.5 * ((hr - 12) / 3) ** 2) * 1.6; ev_prof /= ev_prof.mean(1, keepdims=True)
-EV = (P.EV_CHARGE_GWH * 1e3 * shares / P.HPY)[:, None] * ev_prof
+n_hh = P.ENROLLED / P.HH_SIZE
+n_veh = n_hh * P.VEH_PER_HH
+ev_gwh = n_veh * P.VEH_KM_Y * (P.VEH_EV_SHARE * P.EV_KWH_KM + (1 - P.VEH_EV_SHARE) * P.PHEV_E_SHARE * P.PHEV_KWH_KM) / (1 - P.CHARGE_LOSS) / 1e6
+phev_fuel_ML = n_veh * (1 - P.VEH_EV_SHARE) * P.VEH_KM_Y * (1 - P.PHEV_E_SHARE) * P.PHEV_L_100KM / 100 / 1e6
+EV = (ev_gwh * 1e3 * shares / P.HPY)[:, None] * ev_prof
 MOB = ERS + DRONE + EV
+
+# ---------------------------------------------------------------- digester biogas (fuel MWh per hour, per hub)
+asp_head = P.FEEDLOT_CAPACITY * P.ASP_COVER_SHARE
+bg_src = {}
+_m3 = asp_head * P.FEEDLOT_VS_KG_HEAD_DAY * 365 * P.FEEDLOT_MANURE_CAPTURE * P.FEEDLOT_B0
+bg_src["feedlot_manure"] = np.array([asp_alloc.get(hb["key"], 0.0) for hb in P.HUBS]) * _m3
+bg_src["food_garden_organics"] = N_h * P.FOGO_T_PER_RESIDENT * 1e3 * P.FOGO_VS * P.FOGO_B0
+bg_src["glasshouse_residue"] = produce_kg * P.GH_RESIDUE_T_PER_T * P.GH_RESIDUE_VS * P.GH_RESIDUE_B0
+bg_src["ras_sludge"] = seafood_kg * P.FCR * P.RAS_SLUDGE_DM_PER_FEED * P.RAS_SLUDGE_VS * P.RAS_SLUDGE_B0
+bg_src["fish_offal"] = seafood_kg * P.FISH_OFFAL_SHARE * P.FISH_OFFAL_VS * P.FISH_OFFAL_B0
+bg_src_pj = {k: float(v.sum() * P.CH4_MJ_PER_M3 / 1e9) for k, v in bg_src.items()}
+BG_HUB_MWH_H = sum(bg_src.values()) * P.CH4_MJ_PER_M3 / 3600.0 / P.HPY      # MWh fuel per hour, per hub
+BIOGAS_PJ = sum(bg_src_pj.values())
+# Asparagopsis algae-scrubber nitrogen balance (raceways fed with RAS effluent)
+asp_N_t = asp_t * P.ASP_N_DW
+ras_N_excreted_t = float(seafood_kg.sum() / 1e3 * P.FCR * P.FEED_N * (1 - P.FISH_N_RETAIN))
 
 
 def heat_case(c, k):
@@ -249,10 +269,15 @@ def run(scen):
     kidx = np.array([LKEYS.index(s["load"]) for s in scen])
     flex = (P.FLEX_SHARE * IT)[None, :] * np.ones((S, 1))
     sq = math.sqrt(P.BATT_RTE)
-    budget_y = P.HVO_ANNUAL_ML * 1e6 * P.HVO_MJ_PER_L * P.HVO_ELEC_EFF / 3600.0   # MWh_e
+    budget_y = P.HVO_ANNUAL_ML * 1e6 * P.HVO_MJ_PER_L / 3600.0   # biodiesel fuel energy, MWh
+    eff = P.HVO_ELEC_EFF
+    bg_in = BG_HUB_MWH_H[None, :] * np.ones((S, 1))
+    bg_cap = bg_in * 24.0 * P.BIOGAS_STORE_DAYS
+    bstore = 0.5 * bg_cap
+    gmax = (1.0 - P.BD_PILOT_MIN) / P.BD_PILOT_MIN          # biogas : biodiesel energy ratio ceiling (67:33)
     soc = 0.5 * bE.copy()
     acc_ = {k: np.zeros((S, H)) for k in ["uns", "imp", "exp", "hvo", "curt", "wgen", "pgen", "sgen",
-                                           "load", "impcost", "exprev", "moved", "bdis"]}
+                                           "load", "impcost", "exprev", "moved", "bdis", "bd_fuel", "bg_fuel", "bg_over"]}
     uns_t = np.zeros((S, NH), dtype=np.float32)
     tj = [j for j, s in enumerate(scen) if s.get("trace")]
     TR = {k: np.zeros((len(tj), NH), dtype=np.float32) for k in ["wind", "pv", "smr", "bdis", "bch", "hvo", "imp", "exp", "curt", "load", "uns", "moved"]}
@@ -290,11 +315,19 @@ def run(scen):
         impav = impc * aimp[:, t] * acc
         im1 = np.where(imfirst[:, None], np.minimum(need, impav), 0.0)
         need -= im1
-        hv = np.minimum(need, hvo)
-        tot = hv.sum(1)
+        # dual-fuel engines: biogas from the hub gas holder up to 67% of fuel energy, biodiesel >= 33% pilot
+        bstore += bg_in
+        over = np.clip(bstore - bg_cap, 0, None); bstore -= over
+        Fq = np.minimum(need, hvo) / eff                     # fuel energy wanted, MWh
+        Gq = np.minimum((1.0 - P.BD_PILOT_MIN) * Fq, bstore)
+        Dq = Fq - Gq
+        tot = Dq.sum(1)
         scale = np.where(tot > budget, np.divide(budget, tot, out=np.zeros(S), where=tot > 0), 1.0)
-        hv = hv * scale[:, None]
-        budget -= hv.sum(1)
+        Dq = Dq * scale[:, None]
+        Gq = np.minimum(Gq, Dq * gmax)
+        hv = (Dq + Gq) * eff
+        budget -= Dq.sum(1); bstore -= Gq
+        acc_["bd_fuel"] += Dq; acc_["bg_fuel"] += Gq; acc_["bg_over"] += over
         need -= hv
         im = np.minimum(need, impav - im1) + im1
         need -= (im - im1)
@@ -308,7 +341,7 @@ def run(scen):
             for kk, vv in (("wind", wg), ("pv", pg), ("smr", sg), ("bdis", dis), ("bch", ch), ("hvo", hv), ("imp", im),
                            ("exp", ex), ("curt", cu), ("load", L), ("uns", need), ("moved", shed * fs[:, None])):
                 TR[kk][:, t] = vv[tj].sum(1)
-        hvo_y[:, t // P.HPY] += hv.sum(1)
+        hvo_y[:, t // P.HPY] += Dq.sum(1)
     run.trace = TR
     return acc_, uns_t, hvo_y
 
@@ -355,8 +388,13 @@ results = []
 for j, s in enumerate(scen):
     a = {k: v[j] for k, v in ACC.items()}
     load_twh = a["load"].sum() / 1e6 / Y
-    hvo_mwh = a["hvo"].sum() / Y
-    hvo_L = hvo_mwh * 3600.0 / (P.HVO_ELEC_EFF * P.HVO_MJ_PER_L)
+    hvo_mwh = a["hvo"].sum() / Y                               # engine electricity, MWh_e/y
+    bd_MJ = a["bd_fuel"].sum() / Y * 3600.0                     # biodiesel fuel, MJ/y
+    bg_MJ = a["bg_fuel"].sum() / Y * 3600.0                     # biogas burnt in engines, MJ/y
+    bg_over_MJ = a["bg_over"].sum() / Y * 3600.0                # surplus biogas -> biomethane farm fuel
+    hvo_L = bd_MJ / P.HVO_MJ_PER_L                              # biodiesel litres
+    uco_L = min(hvo_L, P.UCO_ML * 1e6 * P.UCO_YIELD)
+    tal_L = hvo_L - uco_L
     pf = P.PORTFOLIOS[s["portfolio"]]
     batt_gwh = pf["batt"] * H
     c_wind = a["wgen"].sum() / Y * P.WIND_G_KWH / 1e6        # MWh * g/kWh = kg ... -> t: MWh*1e3 kWh*g/1e6 = t
@@ -366,7 +404,8 @@ for j, s in enumerate(scen):
     c_smr = a["sgen"].sum() / Y * P.NUC_G_KWH / 1e3 / 1e6
     c_batt = batt_gwh * 1e6 * P.BATT_KG_PER_KWH / P.BATT_LIFE / 1e9
     c_imp = float((a["imp"] / Y * grid_f).sum()) / 1e6
-    c_hvo = hvo_L * P.HVO_MJ_PER_L * P.HVO_G_PER_MJ / 1e12
+    c_hvo = (uco_L * P.HVO_MJ_PER_L * P.UCO_G_PER_MJ + tal_L * P.HVO_MJ_PER_L * P.TALLOW_G_PER_MJ
+             + bg_MJ * P.BIOGAS_G_PER_MJ) / 1e12
     uns = UNS[j].astype(np.float64)
     ep = episodes(uns)
     results.append(dict(
@@ -375,12 +414,16 @@ for j, s in enumerate(scen):
         **{f"ep_{k}": v for k, v in ep.items()},
         wind_twh=a["wgen"].sum() / 1e6 / Y, pv_twh=a["pgen"].sum() / 1e6 / Y, smr_twh=a["sgen"].sum() / 1e6 / Y,
         curt_twh=a["curt"].sum() / 1e6 / Y, exp_twh=a["exp"].sum() / 1e6 / Y, imp_twh=a["imp"].sum() / 1e6 / Y,
-        hvo_twh=hvo_mwh / 1e6, hvo_ML=hvo_L / 1e6, hvo_ML_max_year=float(HVOY[j].max() * 3600.0 / (P.HVO_ELEC_EFF * P.HVO_MJ_PER_L) / 1e6),
+        hvo_twh=hvo_mwh / 1e6, hvo_ML=hvo_L / 1e6, hvo_ML_max_year=float(HVOY[j].max() * 3600.0 / P.HVO_MJ_PER_L / 1e6),
+        uco_ML=uco_L / 1e6, tallow_ML=tal_L / 1e6, bg_engine_PJ=bg_MJ / 1e9, bg_surplus_PJ=bg_over_MJ / 1e9,
+        bg_share_engine=bg_MJ / (bg_MJ + bd_MJ) if (bg_MJ + bd_MJ) > 0 else 0.0,
+        biogas_cost_m=(bg_MJ * P.BIOGAS_AUD_GJ + bg_over_MJ * (P.BIOGAS_AUD_GJ + P.BIOMETHANE_UPGRADE_AUD_GJ)) / 1e3 / 1e6,
         moved_twh=a["moved"].sum() / 1e6 / Y, batt_dis_twh=a["bdis"].sum() / 1e6 / Y,
         c_wind=c_wind, c_pv=c_pv, c_smr=c_smr, c_batt=c_batt, c_imp=c_imp, c_hvo=c_hvo,
         gross=c_wind + c_pv + c_smr + c_batt + c_imp + c_hvo,
         imp_cost_m=a["impcost"].sum() / Y / 1e6, exp_rev_m=a["exprev"].sum() / Y / 1e6,
-        hvo_cost_m=hvo_L * P.HVO_AUD_PER_L / 1e6,
+        hvo_cost_m=(uco_L * (P.UCO_AUD_L / P.UCO_YIELD + P.UCO_CONV_AUD_L) + tal_L * P.TALLOW_BD_AUD_L
+                    + bg_MJ * P.BIOGAS_AUD_GJ / 1e3) / 1e6,
         imp_by_hub=(a["imp"].sum(1) / Y / 1e6 if a["imp"].ndim > 1 else (a["imp"] / Y / 1e6)).tolist(),
     ))
 
@@ -461,7 +504,10 @@ out = dict(runtime_s=runtime, weddell=weddell, scenarios=results, heat=heat_tab,
            parcels=parcels, deliv_drones=deliv_drones,
            drones_total=deliv_drones + H * (P.DRONE_INSPECT_PER_HUB + P.DRONE_AG_PER_HUB),
            drone_credit_mt=drone_credit, van_L=van_L,
-           ers_hub_gwh=(ers_hub / 1e3).tolist())
+           ers_hub_gwh=(ers_hub / 1e3).tolist(),
+           biogas_pj=BIOGAS_PJ, biogas_src_pj=bg_src_pj, asp_N_t=asp_N_t, ras_N_excreted_t=ras_N_excreted_t,
+           n_hh=n_hh, n_veh=n_veh, ev_gwh=ev_gwh, phev_fuel_ML=phev_fuel_ML,
+           hh_connected=float((N_h / P.HH_SIZE * P.HH_CONNECT).sum()))
 with open(os.path.join(HERE, f"dga_results_{WIND_MODE}.json"), "w") as f:
     json.dump(out, f, indent=1, default=float)
 np.savez_compressed(os.path.join(HERE, f"dga_trace_{WIND_MODE}.npz"), **{k: v for k, v in run.trace.items()},

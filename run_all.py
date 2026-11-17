@@ -2,13 +2,17 @@
 
     python run_all.py
 
-Steps: weather conversion -> ERA5 dispatch for three wind treatments -> synthetic comparison
--> ledgers -> figures. Outputs (dga_*.json, dga_*.npz, fig*.png) are written next to the scripts.
+Steps: input checksums -> weather conversion -> ERA5 dispatch for three wind treatments -> ledgers
+-> community-benefit cost and GPU premium -> figures -> clean-reproduction check against the published
+reference values. Outputs (dga_*.json, dga_*.npz, fig*.png, dga_reproduction_report.txt) are written
+next to the scripts; no sub-folders are created.
 """
 import os, subprocess, sys, time
 HERE = os.path.dirname(os.path.abspath(__file__))
-STEPS = [["dga_weather.py"]] + [["dga_model.py", m] for m in ("rez", "palmer", "raw")] + [["dga_model_synthetic.py"]] \
-        + [["dga_analysis.py", m] for m in ("rez", "palmer", "raw", "synthetic")] + [["dga_figures.py"]]
+MODES = ("rez", "palmer", "raw")
+STEPS = [["dga_checksums.py", "--data-only"], ["dga_weather.py"]] + [["dga_model.py", m] for m in MODES] \
+        + [["dga_analysis.py", m] for m in MODES] + [["dga_premium.py", m] for m in MODES] \
+        + [["dga_figures.py"], ["dga_verify.py"]]
 t0 = time.time()
 for step in STEPS:
     print(">>", " ".join(step), flush=True)
