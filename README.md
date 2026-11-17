@@ -1,76 +1,47 @@
-# Digital Gardens Australia — model code and data (v1.1.0)
+# Digital Gardens Sunraysia — model code and data (v2.0.0)
 
 Repository: https://github.com/bcjohnjr/Digital-Gardens-of-Australia-Code-and-Data
 
-Everything runs from **one folder with no subfolders**. Scripts, the weather file and all outputs sit side by side.
+This model covers a population-weighted, distributed AI data-centre network. It serves 16 Sunraysia and Murray-corridor towns (75,833 residents at the 2021 Census) through six shared campuses. It is compared with grid-supplied metropolitan campuses in western Sydney and Melbourne, with a gas-fired campus, and with nine named Australian mega-campus projects.
 
-## Files to upload to the repository (all in the top level)
+Everything runs from **one folder with no subfolders**.
+
+## Files
 
 | File | What it is |
 |---|---|
-| `dga_params.py` | Every assumption, with its source |
-| `dga_weather.py` | Checks the weather file (140,160 hours, no 29 February, no gaps) and converts it |
-| `dga_model.py` | Hourly dispatch for the seven hubs, 2010–2025, and the carbon, heat, food, fuel and mobility ledgers |
-| `dga_analysis.py` | Derives every number reported in the manuscript |
-| `dga_premium.py` | Community-benefit cost ledger and the GPU-rental premium that would fund it |
-| `dga_figures.py` | Figures and maps |
-| `dga_verify.py` | Clean-reproduction check against the published values |
-| `dga_checksums.py` | SHA-256 verification of the data and code |
-| `dga_download_era5.py` | Optional: rebuilds the weather file from the Open-Meteo ERA5 archive (stdlib + pandas) |
+| `dgs_params.py` | Every assumption, with its source |
+| `dgs_towns_2021.csv` | ABS 2021 locality populations, campus groups and IT allocations |
+| `dgs_download_era5.py` | Downloads ERA5 weather for 10 sites, 2010–2025, from Open-Meteo (about 15–30 min) |
+| `dgs_weather.py` | Checks the weather file (140,160 hours, no 29 February, no gaps) and converts it |
+| `dgs_model.py` | Hourly dispatch for all scenarios; carbon, heat, food, biogas and vehicle ledgers |
+| `dgs_analysis.py` | Every number reported in the manuscript |
+| `dgs_premium.py` | Community-benefit cost ledger and the GPU-rental surcharge |
+| `dgs_figures.py` | Figures and maps |
+| `dgs_verify.py`, `dgs_checksums.py` | Reproduction check and SHA-256 checks |
 | `run_all.py` | Runs everything in order |
-| `dispatch_hourly_wide.csv.gz` | ERA5 weather input, 8 sites × 140,160 hours (23.2 MB) |
-| `provenance_manifest.json` | Download provenance: API, model pin, coordinates, raw-response SHA-256 for all 128 site-years |
-| `dga_checksums.sha256` | SHA-256 of the data and code files |
-| `dga_reference_values.json` | The 159 published values that `dga_verify.py` checks |
-| `dga_aus_outline.json` | Australia outline for the maps (Natural Earth 1:110m, public domain) |
-| `requirements.txt`, `README.md`, `CITATION.cff`, `LICENSE` | Dependencies, this file, citation metadata, MIT licence |
-
-All files are under GitHub's 25 MB web-upload limit.
+| `dgs_era5_hourly.csv.gz`, `dgs_provenance_manifest.json` | ERA5 input and its download record |
+| `dgs_checksums.sha256`, `dgs_reference_values.json` | Checksums and published values |
+| `dgs_aus_outline.json` | Australia outline for the maps (Natural Earth, public domain) |
 
 ## Run
 
-1. Put the files above in one folder.
-2. Install the dependencies once (Python 3.10 or newer):
-   - Windows: `py -m pip install -r requirements.txt`
-   - macOS/Linux: `python3 -m pip install -r requirements.txt`
-3. Run everything:
-   - Windows: `py run_all.py`
-   - macOS/Linux: `python3 run_all.py`
+1. Install the dependencies (Python 3.10+): `python -m pip install -r requirements.txt`
+2. If `dgs_era5_hourly.csv.gz` is not present, download the weather first: `python dgs_download_era5.py`
+3. Run everything: `python run_all.py`
 
-The full run takes about one minute on a fast laptop and can take several minutes on slower machines. The last line should read
-`RESULT: 159 of 159 values reproduced - CLEAN REPRODUCTION`, and the details are written to
-`dga_reproduction_report.txt`. Nothing is written outside the folder and no `__pycache__` folder is created.
+The last line of the run should report that every published value was reproduced. If the weather file is missing, the model falls back to a clearly labelled PROVISIONAL proxy (when `dispatch_hourly_wide.csv.gz` is present). Do not cite proxy results.
 
-## Steps (what `run_all.py` does)
-
-| Step | Command | Writes |
-|---|---|---|
-| Verify input data | `dga_checksums.py --data-only` | — |
-| Check and convert weather | `dga_weather.py` | `dga_era5_weather.npz` |
-| Dispatch, regional wind siting (central) | `dga_model.py rez` | `dga_results_rez.json`, `dga_trace_rez.npz`, `dga_hourly_rez.npz` |
-| Dispatch, station sites, ERA5 bias-corrected | `dga_model.py palmer` | `dga_results_palmer.json` (+ npz) |
-| Dispatch, station sites, raw ERA5 | `dga_model.py raw` | `dga_results_raw.json` (+ npz) |
-| Ledgers (carbon, heat, water, fuel, economics) | `dga_analysis.py rez` (and `palmer`, `raw`) | `dga_numbers_*.json` |
-| Community cost and GPU premium | `dga_premium.py rez` (and `palmer`, `raw`) | `dga_premium_*.json` |
-| Figures and maps | `dga_figures.py` | `fig*.png`, `dga_fig_extra.json` |
-| Clean-reproduction check | `dga_verify.py` | `dga_reproduction_report.txt` |
-
-## Checking the data independently
-
-- `python dga_checksums.py` verifies all 14 listed files; `sha256sum -c dga_checksums.sha256` does the same on Linux/macOS.
-- SHA-256 of `dispatch_hourly_wide.csv.gz`: `4e7be3e638b312aedb59a41539d6d23081f371184abcac0faafbfa1885a3ecc9`.
-- To rebuild the weather file from the provider: `python dga_download_era5.py --out era5_rebuilt.csv.gz`, then
-  `python dga_checksums.py --compare-csv era5_rebuilt.csv.gz`. The gzip bytes will differ (compression
-  metadata and line endings), but the values agree: an offline rebuild from the 128 cached API responses
-  matched the supplied file to within 2.2 × 10⁻¹⁶ in every cell.
+**Maintainer, after new weather data:** run `python run_all.py`, then `python dgs_verify.py --make-reference`, then `python dgs_checksums.py --write`, then `python run_all.py` again.
 
 ## Notes
 
-- Weather: ERA5 reanalysis (Hersbach et al. 2020) via the Open-Meteo archive API, model pinned to `era5`, elevation downscaling disabled, UTC timestamps, 2010–2025 with 29 February removed. ERA5 is an observation-constrained reanalysis, not station measurement, and the coordinates are retired coal-station proxies, not verified wind-farm or solar-farm sites. Electricity prices and grid and SMR outages are synthetic, using a fixed random seed.
-- Wind treatments: `rez` scales ERA5 wind speeds so that each hub reaches its regional wind-farm capacity-factor target. `palmer` corrects the median ERA5 under-prediction (−30%) at the station cells. `raw` uses ERA5 unchanged.
-- Firming engines are dual-fuel: digester biogas up to 67% of fuel energy, with waste-oil biodiesel never below 33%. Biodiesel comes first from a used-cooking-oil purchase programme and then from rendered tallow.
-- The GPU premium (`dga_premium.py`) covers the community programme only (free food, hot water, drying, Asparagopsis, biomethane, vehicles, charging and renewable-fuel price parity). Electricity-supply costs are not in it.
+- **Weather.** ERA5 reanalysis (Hersbach et al. 2020) via the Open-Meteo archive, model pinned to `era5`, UTC timestamps. Coordinates are town anchors and approximate wind zones, not surveyed sites.
+- **Synthetic inputs.** Prices, grid contingencies and campus outages are synthetic, with a fixed seed.
+- **Standby engines.** The engines are standby only. They co-fire stored biogas with at least 33% biodiesel and are supplied first by a used-cooking-oil purchase programme.
+- **GPU surcharge.** The surcharge covers community benefits only; electricity-supply costs are excluded.
+- **Concept status.** Digital Gardens Sunraysia is a concept. No land, grid, fibre, licence or contract exists.
 
-## Licence and citation
+## Licence
 
-Code: MIT. Data: ERA5 is © ECMWF/Copernicus, distributed by Open-Meteo under CC BY 4.0; cite both. See `CITATION.cff`.
+Code: MIT. ERA5 data: © ECMWF/Copernicus, distributed by Open-Meteo under CC BY 4.0.

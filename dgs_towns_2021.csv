@@ -1,0 +1,17 @@
+town,state,2021_census_locality_population,share_percent,phase,shared_campus,proportional_it_100mw,proportional_it_300mw,proportional_it_350mw,proportional_it_500mw,proportional_it_1000mw,source_url
+Mildura,VIC,34565,45.5804,Core,Mildura + Buronga + Gol Gol,45.5804,136.7413,159.5315,227.9021,455.8042,https://www.abs.gov.au/census/find-census-data/quickstats/2021/SAL21682
+Buronga,NSW,1252,1.6510,Core,Mildura + Buronga + Gol Gol,1.6510,4.9530,5.7785,8.2550,16.5100,https://www.abs.gov.au/census/find-census-data/quickstats/2021/SAL10693
+Gol Gol,NSW,1596,2.1046,Core,Mildura + Buronga + Gol Gol,2.1046,6.3139,7.3662,10.5231,21.0462,https://en.wikipedia.org/wiki/Wentworth_Shire
+Irymple,VIC,5977,7.8818,Core,Irymple + Red Cliffs + Koorlong + Cardross,7.8818,23.6454,27.5863,39.4090,78.8179,https://en.wikipedia.org/wiki/Rural_City_of_Mildura
+Red Cliffs,VIC,5294,6.9811,Core,Irymple + Red Cliffs + Koorlong + Cardross,6.9811,20.9434,24.4340,34.9056,69.8113,https://www.abs.gov.au/census/find-census-data/quickstats/2021/SAL22147
+Merbein,VIC,2770,3.6528,Core,Merbein + Wentworth + Dareton,3.6528,10.9583,12.7847,18.2638,36.5276,https://en.wikipedia.org/wiki/Rural_City_of_Mildura
+Wentworth,NSW,1577,2.0796,Core,Merbein + Wentworth + Dareton,2.0796,6.2387,7.2785,10.3978,20.7957,https://en.wikipedia.org/wiki/Wentworth_Shire
+Dareton,NSW,456,0.6013,Core,Merbein + Wentworth + Dareton,0.6013,1.8040,2.1046,3.0066,6.0132,https://en.wikipedia.org/wiki/Wentworth_Shire
+Koorlong,VIC,397,0.5235,Core,Irymple + Red Cliffs + Koorlong + Cardross,0.5235,1.5706,1.8323,2.6176,5.2352,https://en.wikipedia.org/wiki/Rural_City_of_Mildura
+Cardross,VIC,847,1.1169,Core,Irymple + Red Cliffs + Koorlong + Cardross,1.1169,3.3508,3.9092,5.5846,11.1693,https://en.wikipedia.org/wiki/Rural_City_of_Mildura
+Robinvale,VIC,3497,4.6114,Expansion,Robinvale + Euston,4.6114,13.8343,16.1401,23.0572,46.1145,https://www.abs.gov.au/census/find-census-data/quickstats/2021/SAL22183
+Euston,NSW,822,1.0840,Expansion,Robinvale + Euston,1.0840,3.2519,3.7939,5.4198,10.8396,https://www.abs.gov.au/census/find-census-data/quickstats/2021/SAL11471
+Swan Hill,VIC,11186,14.7508,Expansion,Swan Hill + Nyah,14.7508,44.2525,51.6279,73.7542,147.5083,https://en.wikipedia.org/wiki/Rural_City_of_Swan_Hill
+Nyah,VIC,536,0.7068,Expansion,Swan Hill + Nyah,0.7068,2.1204,2.4739,3.5341,7.0682,https://en.wikipedia.org/wiki/Rural_City_of_Swan_Hill
+Kerang,VIC,3960,5.2220,Expansion,Kerang + Koondrook,5.2220,15.6660,18.2770,26.1100,52.2200,https://en.wikipedia.org/wiki/Shire_of_Gannawarra
+Koondrook,VIC,1101,1.4519,Expansion,Kerang + Koondrook,1.4519,4.3556,5.0816,7.2594,14.5187,https://en.wikipedia.org/wiki/Shire_of_Gannawarra

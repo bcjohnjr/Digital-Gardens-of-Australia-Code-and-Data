@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite it as below."
-title: "Digital Gardens Australia: model code and ERA5 input data"
-version: 1.1.0
+title: "Digital Gardens Sunraysia: model code and ERA5 input data"
+version: 2.0.0
 date-released: 2026-11-17
 authors:
   - family-names: Bily
@@ -15,6 +15,7 @@ keywords:
   - heat recovery
   - ERA5
   - Australia
+  - Sunraysia
 references:
   - type: article
     title: "The ERA5 global reanalysis"
