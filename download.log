@@ -1,0 +1,642 @@
+2026-11-17 12:36:10,707 | INFO | Downloader started. Progress log: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\download.log
+2026-11-17 12:36:10,708 | INFO | [1/8] muswellbrook 2010 START
+2026-11-17 12:36:10,709 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:36:18,534 | INFO |   HTTP 200 after 7.8s, 524.6 KB
+2026-11-17 12:36:18,630 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2010_era5_ae8eeab525c0.json.gz (125.6 KB)
+2026-11-17 12:36:18,756 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2010_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:36:18,757 | INFO | [1/8] muswellbrook 2011 START
+2026-11-17 12:36:18,760 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:36:22,604 | INFO |   HTTP 200 after 3.8s, 524.7 KB
+2026-11-17 12:36:22,703 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2011_era5_455d85270c23.json.gz (126.2 KB)
+2026-11-17 12:36:22,809 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2011_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:36:22,809 | INFO | [1/8] muswellbrook 2012 START
+2026-11-17 12:36:22,810 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:36:28,024 | INFO |   HTTP 200 after 5.2s, 525.0 KB
+2026-11-17 12:36:28,126 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2012_era5_eb99feaf8804.json.gz (125.7 KB)
+2026-11-17 12:36:28,239 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2012_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:36:28,239 | INFO | [1/8] muswellbrook 2013 START
+2026-11-17 12:36:28,240 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:36:33,722 | INFO |   HTTP 200 after 5.5s, 523.7 KB
+2026-11-17 12:36:33,811 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2013_era5_29566d3d124f.json.gz (125.3 KB)
+2026-11-17 12:36:33,916 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2013_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:36:33,916 | INFO | [1/8] muswellbrook 2014 START
+2026-11-17 12:36:33,917 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:36:39,106 | INFO |   HTTP 200 after 5.2s, 524.1 KB
+2026-11-17 12:36:39,196 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2014_era5_967cf0a47b57.json.gz (127.2 KB)
+2026-11-17 12:36:39,305 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2014_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:36:39,306 | INFO | [1/8] muswellbrook 2015 START
+2026-11-17 12:36:39,306 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:36:44,307 | INFO |   HTTP 200 after 5.0s, 523.9 KB
+2026-11-17 12:36:44,399 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2015_era5_a0fbd420cbd8.json.gz (125.6 KB)
+2026-11-17 12:36:44,502 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2015_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:36:44,503 | INFO | [1/8] muswellbrook 2016 START
+2026-11-17 12:36:44,503 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:36:51,027 | INFO |   HTTP 200 after 6.5s, 526.0 KB
+2026-11-17 12:36:51,119 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2016_era5_5370cb81b377.json.gz (126.3 KB)
+2026-11-17 12:36:51,227 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2016_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:36:51,228 | INFO | [1/8] muswellbrook 2017 START
+2026-11-17 12:36:51,228 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:36:57,698 | INFO |   HTTP 200 after 6.5s, 523.8 KB
+2026-11-17 12:36:57,795 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2017_era5_70345e989207.json.gz (127.2 KB)
+2026-11-17 12:36:57,900 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2017_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:36:57,900 | INFO | [1/8] muswellbrook 2018 START
+2026-11-17 12:36:57,901 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:37:04,574 | INFO |   HTTP 200 after 6.7s, 523.1 KB
+2026-11-17 12:37:04,671 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2018_era5_ce5a990218d4.json.gz (126.3 KB)
+2026-11-17 12:37:04,778 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2018_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:37:04,778 | INFO | [1/8] muswellbrook 2019 START
+2026-11-17 12:37:04,779 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:37:10,290 | INFO |   HTTP 200 after 5.5s, 523.3 KB
+2026-11-17 12:37:10,384 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2019_era5_073a7c9f8d60.json.gz (125.7 KB)
+2026-11-17 12:37:10,488 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2019_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:37:10,489 | INFO | [1/8] muswellbrook 2020 START
+2026-11-17 12:37:10,489 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:37:14,437 | INFO |   HTTP 200 after 3.9s, 525.8 KB
+2026-11-17 12:37:14,531 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2020_era5_967f77acdab0.json.gz (127.6 KB)
+2026-11-17 12:37:14,637 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2020_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:37:14,638 | INFO | [1/8] muswellbrook 2021 START
+2026-11-17 12:37:14,638 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:37:19,153 | INFO |   HTTP 200 after 4.5s, 524.2 KB
+2026-11-17 12:37:19,250 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2021_era5_34ba99eca0da.json.gz (125.7 KB)
+2026-11-17 12:37:19,354 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2021_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:37:19,355 | INFO | [1/8] muswellbrook 2022 START
+2026-11-17 12:37:19,355 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:37:27,243 | INFO |   HTTP 200 after 7.9s, 525.5 KB
+2026-11-17 12:37:27,335 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2022_era5_b5257d92182f.json.gz (126.6 KB)
+2026-11-17 12:37:27,442 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2022_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:37:27,443 | INFO | [1/8] muswellbrook 2023 START
+2026-11-17 12:37:27,443 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:37:38,955 | INFO |   HTTP 200 after 11.5s, 523.1 KB
+2026-11-17 12:37:39,045 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2023_era5_20df2143747e.json.gz (126.1 KB)
+2026-11-17 12:37:39,159 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2023_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:37:39,159 | INFO | [1/8] muswellbrook 2024 START
+2026-11-17 12:37:39,160 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:37:49,855 | INFO |   HTTP 200 after 10.7s, 526.0 KB
+2026-11-17 12:37:49,940 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2024_era5_8b38fc44d8ef.json.gz (126.4 KB)
+2026-11-17 12:37:50,046 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2024_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:37:50,047 | INFO | [1/8] muswellbrook 2025 START
+2026-11-17 12:37:50,047 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:37:57,509 | INFO |   HTTP 200 after 7.5s, 525.0 KB
+2026-11-17 12:37:57,608 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\muswellbrook\2025_era5_6edd6c7224c1.json.gz (127.3 KB)
+2026-11-17 12:37:57,713 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\muswellbrook\2025_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:37:59,276 | INFO | [2/8] lithgow 2010 START
+2026-11-17 12:37:59,277 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:38:04,321 | INFO |   HTTP 200 after 5.0s, 522.5 KB
+2026-11-17 12:38:04,430 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2010_era5_7b0d9c90386a.json.gz (125.7 KB)
+2026-11-17 12:38:04,535 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2010_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:38:04,536 | INFO | [2/8] lithgow 2011 START
+2026-11-17 12:38:04,536 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:38:07,201 | INFO |   HTTP 200 after 2.7s, 523.0 KB
+2026-11-17 12:38:07,295 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2011_era5_11c59c8f1c03.json.gz (126.3 KB)
+2026-11-17 12:38:07,399 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2011_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:38:07,400 | INFO | [2/8] lithgow 2012 START
+2026-11-17 12:38:07,400 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:38:11,295 | INFO |   HTTP 200 after 3.9s, 523.7 KB
+2026-11-17 12:38:11,398 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2012_era5_3b8891549e67.json.gz (126.2 KB)
+2026-11-17 12:38:11,505 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2012_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:38:11,505 | INFO | [2/8] lithgow 2013 START
+2026-11-17 12:38:11,506 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:38:15,188 | INFO |   HTTP 200 after 3.7s, 521.7 KB
+2026-11-17 12:38:15,287 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2013_era5_c2956a3b8489.json.gz (125.8 KB)
+2026-11-17 12:38:15,395 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2013_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:38:15,395 | INFO | [2/8] lithgow 2014 START
+2026-11-17 12:38:15,396 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:38:22,236 | INFO |   HTTP 200 after 6.8s, 522.2 KB
+2026-11-17 12:38:22,336 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2014_era5_c087c8f725cf.json.gz (126.9 KB)
+2026-11-17 12:38:22,440 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2014_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:38:22,441 | INFO | [2/8] lithgow 2015 START
+2026-11-17 12:38:22,441 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:38:28,507 | INFO |   HTTP 200 after 6.1s, 522.5 KB
+2026-11-17 12:38:28,602 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2015_era5_e952e51f8eb0.json.gz (125.8 KB)
+2026-11-17 12:38:28,709 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2015_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:38:28,710 | INFO | [2/8] lithgow 2016 START
+2026-11-17 12:38:28,710 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:38:33,991 | INFO |   HTTP 200 after 5.3s, 524.6 KB
+2026-11-17 12:38:34,084 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2016_era5_203b9ad79ebd.json.gz (126.8 KB)
+2026-11-17 12:38:34,190 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2016_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:38:34,190 | INFO | [2/8] lithgow 2017 START
+2026-11-17 12:38:34,190 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:38:39,415 | INFO |   HTTP 200 after 5.2s, 522.0 KB
+2026-11-17 12:38:39,509 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2017_era5_a44b4458228b.json.gz (127.5 KB)
+2026-11-17 12:38:39,614 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2017_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:38:39,615 | INFO | [2/8] lithgow 2018 START
+2026-11-17 12:38:39,615 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:38:45,647 | INFO |   HTTP 200 after 6.0s, 521.4 KB
+2026-11-17 12:38:45,739 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2018_era5_3b98acc61445.json.gz (126.6 KB)
+2026-11-17 12:38:45,845 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2018_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:38:45,846 | INFO | [2/8] lithgow 2019 START
+2026-11-17 12:38:45,846 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:38:49,163 | INFO |   HTTP 200 after 3.3s, 521.9 KB
+2026-11-17 12:38:49,255 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2019_era5_ab2db1d38c8b.json.gz (126.2 KB)
+2026-11-17 12:38:49,362 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2019_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:38:49,363 | INFO | [2/8] lithgow 2020 START
+2026-11-17 12:38:49,363 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:38:53,997 | INFO |   HTTP 200 after 4.6s, 524.4 KB
+2026-11-17 12:38:54,091 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2020_era5_a3fa6b6d6699.json.gz (127.5 KB)
+2026-11-17 12:38:54,234 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2020_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:38:54,235 | INFO | [2/8] lithgow 2021 START
+2026-11-17 12:38:54,235 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:38:57,420 | INFO |   HTTP 200 after 3.2s, 523.0 KB
+2026-11-17 12:38:57,517 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2021_era5_3aa451960f99.json.gz (125.6 KB)
+2026-11-17 12:38:57,646 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2021_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:38:57,647 | INFO | [2/8] lithgow 2022 START
+2026-11-17 12:38:57,648 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:39:05,320 | INFO |   HTTP 200 after 7.7s, 524.2 KB
+2026-11-17 12:39:05,412 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2022_era5_3590b01b3651.json.gz (126.3 KB)
+2026-11-17 12:39:05,518 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2022_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:39:05,519 | INFO | [2/8] lithgow 2023 START
+2026-11-17 12:39:05,519 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:39:12,698 | INFO |   HTTP 200 after 7.2s, 521.7 KB
+2026-11-17 12:39:12,789 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2023_era5_a8bea232f624.json.gz (126.7 KB)
+2026-11-17 12:39:12,894 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2023_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:39:12,894 | INFO | [2/8] lithgow 2024 START
+2026-11-17 12:39:12,894 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:39:19,319 | INFO |   HTTP 200 after 6.4s, 524.3 KB
+2026-11-17 12:39:19,418 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2024_era5_8789cbc3c06d.json.gz (126.4 KB)
+2026-11-17 12:39:19,526 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2024_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:39:19,526 | INFO | [2/8] lithgow 2025 START
+2026-11-17 12:39:19,527 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:39:23,853 | INFO |   HTTP 200 after 4.3s, 523.3 KB
+2026-11-17 12:39:23,955 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\lithgow\2025_era5_b193218b63e6.json.gz (127.0 KB)
+2026-11-17 12:39:24,063 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\lithgow\2025_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:39:25,574 | INFO | [3/8] nanango 2010 START
+2026-11-17 12:39:25,574 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:39:31,811 | INFO |   HTTP 200 after 6.2s, 524.2 KB
+2026-11-17 12:39:31,902 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2010_era5_0bc75d84f3a9.json.gz (123.7 KB)
+2026-11-17 12:39:32,009 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2010_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:39:32,009 | INFO | [3/8] nanango 2011 START
+2026-11-17 12:39:32,009 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:39:36,118 | INFO |   HTTP 200 after 4.1s, 523.4 KB
+2026-11-17 12:39:36,213 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2011_era5_f72ececf762f.json.gz (124.4 KB)
+2026-11-17 12:39:36,320 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2011_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:39:36,320 | INFO | [3/8] nanango 2012 START
+2026-11-17 12:39:36,321 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:39:38,574 | INFO |   HTTP 200 after 2.3s, 524.1 KB
+2026-11-17 12:39:38,670 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2012_era5_8e858fc87a44.json.gz (124.1 KB)
+2026-11-17 12:39:38,779 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2012_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:39:38,780 | INFO | [3/8] nanango 2013 START
+2026-11-17 12:39:38,780 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:39:42,929 | INFO |   HTTP 200 after 4.1s, 523.2 KB
+2026-11-17 12:39:43,018 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2013_era5_95ebf2016ac2.json.gz (123.7 KB)
+2026-11-17 12:39:43,131 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2013_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:39:43,131 | INFO | [3/8] nanango 2014 START
+2026-11-17 12:39:43,132 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:39:46,610 | INFO |   HTTP 200 after 3.5s, 523.0 KB
+2026-11-17 12:39:46,708 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2014_era5_85c421cd57cc.json.gz (125.4 KB)
+2026-11-17 12:39:46,819 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2014_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:39:46,820 | INFO | [3/8] nanango 2015 START
+2026-11-17 12:39:46,821 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:39:50,181 | INFO |   HTTP 200 after 3.4s, 523.1 KB
+2026-11-17 12:39:50,273 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2015_era5_e0e5c7737cfa.json.gz (124.1 KB)
+2026-11-17 12:39:50,381 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2015_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:39:50,381 | INFO | [3/8] nanango 2016 START
+2026-11-17 12:39:50,382 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:39:53,515 | INFO |   HTTP 200 after 3.1s, 524.6 KB
+2026-11-17 12:39:53,609 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2016_era5_da2f14272674.json.gz (124.8 KB)
+2026-11-17 12:39:53,715 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2016_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:39:53,715 | INFO | [3/8] nanango 2017 START
+2026-11-17 12:39:53,716 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:39:57,003 | INFO |   HTTP 200 after 3.3s, 522.6 KB
+2026-11-17 12:39:57,098 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2017_era5_df31544ce10f.json.gz (125.2 KB)
+2026-11-17 12:39:57,211 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2017_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:39:57,212 | INFO | [3/8] nanango 2018 START
+2026-11-17 12:39:57,212 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:40:00,000 | INFO |   HTTP 200 after 2.8s, 522.8 KB
+2026-11-17 12:40:00,093 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2018_era5_0dc74246adfb.json.gz (124.2 KB)
+2026-11-17 12:40:00,202 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2018_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:40:00,202 | INFO | [3/8] nanango 2019 START
+2026-11-17 12:40:00,203 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:40:02,713 | INFO |   HTTP 200 after 2.5s, 522.5 KB
+2026-11-17 12:40:02,805 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2019_era5_ae2d8f601ee6.json.gz (124.3 KB)
+2026-11-17 12:40:02,912 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2019_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:40:02,912 | INFO | [3/8] nanango 2020 START
+2026-11-17 12:40:02,912 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:40:05,717 | INFO |   HTTP 200 after 2.8s, 524.3 KB
+2026-11-17 12:40:05,812 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2020_era5_603451795842.json.gz (126.1 KB)
+2026-11-17 12:40:05,920 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2020_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:40:05,920 | INFO | [3/8] nanango 2021 START
+2026-11-17 12:40:05,921 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:40:09,482 | INFO |   HTTP 200 after 3.6s, 523.0 KB
+2026-11-17 12:40:09,574 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2021_era5_10f4508e5ed2.json.gz (124.8 KB)
+2026-11-17 12:40:09,680 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2021_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:40:09,680 | INFO | [3/8] nanango 2022 START
+2026-11-17 12:40:09,681 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:40:13,288 | INFO |   HTTP 200 after 3.6s, 524.4 KB
+2026-11-17 12:40:13,385 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2022_era5_48620236f3b2.json.gz (125.0 KB)
+2026-11-17 12:40:13,495 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2022_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:40:13,496 | INFO | [3/8] nanango 2023 START
+2026-11-17 12:40:13,496 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:40:18,140 | INFO |   HTTP 200 after 4.6s, 522.8 KB
+2026-11-17 12:40:18,230 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2023_era5_4d9f75506799.json.gz (125.2 KB)
+2026-11-17 12:40:18,335 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2023_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:40:18,336 | INFO | [3/8] nanango 2024 START
+2026-11-17 12:40:18,336 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:40:25,273 | INFO |   HTTP 200 after 6.9s, 525.7 KB
+2026-11-17 12:40:25,371 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2024_era5_065f04fc68bb.json.gz (124.7 KB)
+2026-11-17 12:40:25,477 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2024_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:40:25,477 | INFO | [3/8] nanango 2025 START
+2026-11-17 12:40:25,477 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:40:30,262 | INFO |   HTTP 200 after 4.8s, 523.9 KB
+2026-11-17 12:40:30,356 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\nanango\2025_era5_29bbdc7fd432.json.gz (125.3 KB)
+2026-11-17 12:40:30,466 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\nanango\2025_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:40:32,037 | INFO | [4/8] biloela 2010 START
+2026-11-17 12:40:32,038 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:40:40,128 | INFO |   HTTP 200 after 8.1s, 522.6 KB
+2026-11-17 12:40:40,228 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2010_era5_c7e4bbed255a.json.gz (123.9 KB)
+2026-11-17 12:40:40,339 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2010_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:40:40,339 | INFO | [4/8] biloela 2011 START
+2026-11-17 12:40:40,340 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:40:45,428 | INFO |   HTTP 200 after 5.1s, 521.6 KB
+2026-11-17 12:40:45,533 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2011_era5_03b3f047f002.json.gz (124.7 KB)
+2026-11-17 12:40:45,639 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2011_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:40:45,639 | INFO | [4/8] biloela 2012 START
+2026-11-17 12:40:45,640 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:40:50,294 | INFO |   HTTP 200 after 4.7s, 522.3 KB
+2026-11-17 12:40:50,396 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2012_era5_8ebbc85b31fe.json.gz (123.8 KB)
+2026-11-17 12:40:50,503 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2012_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:40:50,504 | INFO | [4/8] biloela 2013 START
+2026-11-17 12:40:50,504 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:40:54,540 | INFO |   HTTP 200 after 4.0s, 520.9 KB
+2026-11-17 12:40:54,633 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2013_era5_b7151379142f.json.gz (124.0 KB)
+2026-11-17 12:40:54,744 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2013_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:40:54,744 | INFO | [4/8] biloela 2014 START
+2026-11-17 12:40:54,745 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:41:00,565 | INFO |   HTTP 200 after 5.8s, 520.5 KB
+2026-11-17 12:41:00,656 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2014_era5_a9c335c59e71.json.gz (125.0 KB)
+2026-11-17 12:41:00,763 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2014_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:41:00,763 | INFO | [4/8] biloela 2015 START
+2026-11-17 12:41:00,764 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:41:05,659 | INFO |   HTTP 200 after 4.9s, 520.8 KB
+2026-11-17 12:41:05,757 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2015_era5_e00ffcbb5d1b.json.gz (123.9 KB)
+2026-11-17 12:41:05,862 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2015_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:41:05,863 | INFO | [4/8] biloela 2016 START
+2026-11-17 12:41:05,864 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:41:10,188 | INFO |   HTTP 200 after 4.3s, 522.5 KB
+2026-11-17 12:41:10,304 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2016_era5_02a46d540a8d.json.gz (124.3 KB)
+2026-11-17 12:41:10,438 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2016_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:41:10,438 | INFO | [4/8] biloela 2017 START
+2026-11-17 12:41:10,439 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:41:14,264 | INFO |   HTTP 200 after 3.8s, 520.4 KB
+2026-11-17 12:41:14,358 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2017_era5_e16b947838c1.json.gz (124.8 KB)
+2026-11-17 12:41:14,469 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2017_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:41:14,469 | INFO | [4/8] biloela 2018 START
+2026-11-17 12:41:14,470 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:41:19,487 | INFO |   HTTP 200 after 5.0s, 520.7 KB
+2026-11-17 12:41:19,576 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2018_era5_2c7766c9992c.json.gz (124.5 KB)
+2026-11-17 12:41:19,681 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2018_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:41:19,681 | INFO | [4/8] biloela 2019 START
+2026-11-17 12:41:19,682 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:41:24,188 | INFO |   HTTP 200 after 4.5s, 520.6 KB
+2026-11-17 12:41:24,283 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2019_era5_f55bd5368590.json.gz (123.9 KB)
+2026-11-17 12:41:24,389 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2019_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:41:24,390 | INFO | [4/8] biloela 2020 START
+2026-11-17 12:41:24,391 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:41:29,353 | INFO |   HTTP 200 after 5.0s, 522.1 KB
+2026-11-17 12:41:29,444 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2020_era5_3697ef8d89b3.json.gz (125.6 KB)
+2026-11-17 12:41:29,547 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2020_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:41:29,548 | INFO | [4/8] biloela 2021 START
+2026-11-17 12:41:29,548 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:41:35,147 | INFO |   HTTP 200 after 5.6s, 521.0 KB
+2026-11-17 12:41:35,247 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2021_era5_fcbd170e1943.json.gz (124.3 KB)
+2026-11-17 12:41:35,356 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2021_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:41:35,356 | INFO | [4/8] biloela 2022 START
+2026-11-17 12:41:35,357 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:41:41,260 | INFO |   HTTP 200 after 5.9s, 522.3 KB
+2026-11-17 12:41:41,356 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2022_era5_0781c8633324.json.gz (125.3 KB)
+2026-11-17 12:41:41,465 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2022_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:41:41,465 | INFO | [4/8] biloela 2023 START
+2026-11-17 12:41:41,466 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:41:47,233 | INFO |   HTTP 200 after 5.8s, 520.5 KB
+2026-11-17 12:41:47,319 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2023_era5_80adb6a740d5.json.gz (124.8 KB)
+2026-11-17 12:41:47,431 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2023_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:41:47,432 | INFO | [4/8] biloela 2024 START
+2026-11-17 12:41:47,432 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:41:56,812 | INFO |   HTTP 200 after 9.4s, 522.8 KB
+2026-11-17 12:41:56,897 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2024_era5_b5ee0ea6e7dc.json.gz (124.4 KB)
+2026-11-17 12:41:57,006 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2024_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:41:57,007 | INFO | [4/8] biloela 2025 START
+2026-11-17 12:41:57,007 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:04,998 | INFO |   HTTP 200 after 8.0s, 521.5 KB
+2026-11-17 12:42:05,095 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\biloela\2025_era5_8e29b9003c77.json.gz (125.0 KB)
+2026-11-17 12:42:05,198 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\biloela\2025_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:06,767 | INFO | [5/8] latrobe_valley 2010 START
+2026-11-17 12:42:06,768 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:12,694 | INFO |   HTTP 200 after 5.9s, 523.1 KB
+2026-11-17 12:42:12,786 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2010_era5_819efcc573e5.json.gz (126.5 KB)
+2026-11-17 12:42:12,893 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2010_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:12,893 | INFO | [5/8] latrobe_valley 2011 START
+2026-11-17 12:42:12,894 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:16,686 | INFO |   HTTP 200 after 3.8s, 523.3 KB
+2026-11-17 12:42:16,781 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2011_era5_1d85e62547ba.json.gz (127.0 KB)
+2026-11-17 12:42:16,888 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2011_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:16,889 | INFO | [5/8] latrobe_valley 2012 START
+2026-11-17 12:42:16,889 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:18,751 | INFO |   HTTP 200 after 1.9s, 525.1 KB
+2026-11-17 12:42:18,849 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2012_era5_ef523c00a3df.json.gz (127.7 KB)
+2026-11-17 12:42:18,959 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2012_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:18,960 | INFO | [5/8] latrobe_valley 2013 START
+2026-11-17 12:42:18,960 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:20,990 | INFO |   HTTP 200 after 2.0s, 523.7 KB
+2026-11-17 12:42:21,087 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2013_era5_3b8fc1a66a19.json.gz (126.6 KB)
+2026-11-17 12:42:21,195 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2013_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:21,195 | INFO | [5/8] latrobe_valley 2014 START
+2026-11-17 12:42:21,196 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:23,025 | INFO |   HTTP 200 after 1.8s, 523.7 KB
+2026-11-17 12:42:23,119 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2014_era5_61770804e5ab.json.gz (127.6 KB)
+2026-11-17 12:42:23,226 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2014_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:23,226 | INFO | [5/8] latrobe_valley 2015 START
+2026-11-17 12:42:23,227 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:24,674 | INFO |   HTTP 200 after 1.4s, 523.7 KB
+2026-11-17 12:42:24,764 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2015_era5_92279d4fdca2.json.gz (126.6 KB)
+2026-11-17 12:42:24,880 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2015_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:24,882 | INFO | [5/8] latrobe_valley 2016 START
+2026-11-17 12:42:24,883 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:28,103 | INFO |   HTTP 200 after 3.2s, 525.8 KB
+2026-11-17 12:42:28,192 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2016_era5_fea9452c699c.json.gz (127.0 KB)
+2026-11-17 12:42:28,300 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2016_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:28,300 | INFO | [5/8] latrobe_valley 2017 START
+2026-11-17 12:42:28,301 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:30,882 | INFO |   HTTP 200 after 2.6s, 523.2 KB
+2026-11-17 12:42:30,974 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2017_era5_4cc503b5d385.json.gz (128.2 KB)
+2026-11-17 12:42:31,082 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2017_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:31,082 | INFO | [5/8] latrobe_valley 2018 START
+2026-11-17 12:42:31,083 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:33,744 | INFO |   HTTP 200 after 2.7s, 523.1 KB
+2026-11-17 12:42:33,837 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2018_era5_7169abadb958.json.gz (127.5 KB)
+2026-11-17 12:42:33,942 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2018_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:33,943 | INFO | [5/8] latrobe_valley 2019 START
+2026-11-17 12:42:33,943 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:36,511 | INFO |   HTTP 200 after 2.6s, 523.7 KB
+2026-11-17 12:42:36,604 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2019_era5_8fd9bc8562f4.json.gz (127.0 KB)
+2026-11-17 12:42:36,712 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2019_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:36,713 | INFO | [5/8] latrobe_valley 2020 START
+2026-11-17 12:42:36,713 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:38,604 | INFO |   HTTP 200 after 1.9s, 525.3 KB
+2026-11-17 12:42:38,695 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2020_era5_9e7d62ae54e2.json.gz (127.2 KB)
+2026-11-17 12:42:38,801 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2020_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:38,802 | INFO | [5/8] latrobe_valley 2021 START
+2026-11-17 12:42:38,802 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:40,465 | INFO |   HTTP 200 after 1.7s, 523.6 KB
+2026-11-17 12:42:40,563 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2021_era5_668777a45505.json.gz (126.1 KB)
+2026-11-17 12:42:40,669 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2021_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:40,670 | INFO | [5/8] latrobe_valley 2022 START
+2026-11-17 12:42:40,670 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:47,410 | INFO |   HTTP 200 after 6.7s, 523.7 KB
+2026-11-17 12:42:47,508 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2022_era5_6031f35f8ee6.json.gz (126.7 KB)
+2026-11-17 12:42:47,614 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2022_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:47,615 | INFO | [5/8] latrobe_valley 2023 START
+2026-11-17 12:42:47,615 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:51,448 | INFO |   HTTP 200 after 3.8s, 524.4 KB
+2026-11-17 12:42:51,541 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2023_era5_1caac74534d5.json.gz (126.7 KB)
+2026-11-17 12:42:51,646 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2023_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:51,646 | INFO | [5/8] latrobe_valley 2024 START
+2026-11-17 12:42:51,647 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:42:57,574 | INFO |   HTTP 200 after 5.9s, 525.6 KB
+2026-11-17 12:42:57,667 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2024_era5_62db14d9c112.json.gz (127.3 KB)
+2026-11-17 12:42:57,777 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2024_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:42:57,778 | INFO | [5/8] latrobe_valley 2025 START
+2026-11-17 12:42:57,778 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:02,640 | INFO |   HTTP 200 after 4.9s, 523.7 KB
+2026-11-17 12:43:02,742 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\latrobe_valley\2025_era5_7ab612551e1b.json.gz (127.7 KB)
+2026-11-17 12:43:02,844 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\latrobe_valley\2025_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:04,344 | INFO | [6/8] port_augusta 2010 START
+2026-11-17 12:43:04,344 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:09,905 | INFO |   HTTP 200 after 5.6s, 527.2 KB
+2026-11-17 12:43:10,006 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2010_era5_64ad839f1279.json.gz (126.2 KB)
+2026-11-17 12:43:10,113 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2010_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:10,114 | INFO | [6/8] port_augusta 2011 START
+2026-11-17 12:43:10,114 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:13,300 | INFO |   HTTP 200 after 3.2s, 526.9 KB
+2026-11-17 12:43:13,393 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2011_era5_957dde99c23a.json.gz (126.1 KB)
+2026-11-17 12:43:13,498 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2011_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:13,498 | INFO | [6/8] port_augusta 2012 START
+2026-11-17 12:43:13,498 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:14,882 | INFO |   HTTP 200 after 1.4s, 528.1 KB
+2026-11-17 12:43:14,984 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2012_era5_1a97ac21b5c1.json.gz (126.6 KB)
+2026-11-17 12:43:15,102 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2012_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:15,102 | INFO | [6/8] port_augusta 2013 START
+2026-11-17 12:43:15,103 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:16,475 | INFO |   HTTP 200 after 1.4s, 526.4 KB
+2026-11-17 12:43:16,569 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2013_era5_4a5e1ba85048.json.gz (125.5 KB)
+2026-11-17 12:43:16,679 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2013_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:16,679 | INFO | [6/8] port_augusta 2014 START
+2026-11-17 12:43:16,680 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:17,480 | INFO |   HTTP 200 after 0.8s, 526.9 KB
+2026-11-17 12:43:17,574 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2014_era5_d8c7f299abd9.json.gz (126.5 KB)
+2026-11-17 12:43:17,684 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2014_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:17,685 | INFO | [6/8] port_augusta 2015 START
+2026-11-17 12:43:17,685 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:18,662 | INFO |   HTTP 200 after 1.0s, 527.7 KB
+2026-11-17 12:43:18,746 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2015_era5_e29a7fc11da5.json.gz (125.2 KB)
+2026-11-17 12:43:18,857 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2015_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:18,858 | INFO | [6/8] port_augusta 2016 START
+2026-11-17 12:43:18,858 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:23,024 | INFO |   HTTP 200 after 4.2s, 528.1 KB
+2026-11-17 12:43:23,120 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2016_era5_3621fd18647d.json.gz (126.7 KB)
+2026-11-17 12:43:23,231 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2016_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:23,232 | INFO | [6/8] port_augusta 2017 START
+2026-11-17 12:43:23,232 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:26,999 | INFO |   HTTP 200 after 3.8s, 526.4 KB
+2026-11-17 12:43:27,094 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2017_era5_d7ff26f74438.json.gz (126.8 KB)
+2026-11-17 12:43:27,207 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2017_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:27,208 | INFO | [6/8] port_augusta 2018 START
+2026-11-17 12:43:27,208 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:30,866 | INFO |   HTTP 200 after 3.7s, 526.2 KB
+2026-11-17 12:43:30,962 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2018_era5_e9b7dce60be5.json.gz (125.8 KB)
+2026-11-17 12:43:31,075 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2018_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:31,076 | INFO | [6/8] port_augusta 2019 START
+2026-11-17 12:43:31,076 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:35,968 | INFO |   HTTP 200 after 4.9s, 526.7 KB
+2026-11-17 12:43:36,061 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2019_era5_eaa7118dd394.json.gz (125.1 KB)
+2026-11-17 12:43:36,166 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2019_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:36,166 | INFO | [6/8] port_augusta 2020 START
+2026-11-17 12:43:36,167 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:40,063 | INFO |   HTTP 200 after 3.9s, 528.2 KB
+2026-11-17 12:43:40,158 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2020_era5_527e5471e931.json.gz (127.1 KB)
+2026-11-17 12:43:40,269 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2020_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:40,269 | INFO | [6/8] port_augusta 2021 START
+2026-11-17 12:43:40,269 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:43,719 | INFO |   HTTP 200 after 3.4s, 526.9 KB
+2026-11-17 12:43:43,816 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2021_era5_6931c90d6674.json.gz (125.7 KB)
+2026-11-17 12:43:43,923 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2021_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:43,924 | INFO | [6/8] port_augusta 2022 START
+2026-11-17 12:43:43,924 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:49,933 | INFO |   HTTP 200 after 6.0s, 526.7 KB
+2026-11-17 12:43:50,016 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2022_era5_b01966bb8b54.json.gz (127.1 KB)
+2026-11-17 12:43:50,122 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2022_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:50,122 | INFO | [6/8] port_augusta 2023 START
+2026-11-17 12:43:50,123 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:54,907 | INFO |   HTTP 200 after 4.8s, 526.4 KB
+2026-11-17 12:43:55,005 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2023_era5_5118225173dd.json.gz (125.8 KB)
+2026-11-17 12:43:55,119 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2023_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:55,120 | INFO | [6/8] port_augusta 2024 START
+2026-11-17 12:43:55,120 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:43:59,010 | INFO |   HTTP 200 after 3.9s, 528.4 KB
+2026-11-17 12:43:59,096 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2024_era5_6bc9008081c1.json.gz (125.8 KB)
+2026-11-17 12:43:59,213 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2024_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:43:59,214 | INFO | [6/8] port_augusta 2025 START
+2026-11-17 12:43:59,215 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:01,788 | INFO |   HTTP 200 after 2.6s, 526.2 KB
+2026-11-17 12:44:01,887 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\port_augusta\2025_era5_4d661a9b43c4.json.gz (126.2 KB)
+2026-11-17 12:44:01,993 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\port_augusta\2025_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:03,662 | INFO | [7/8] collie 2010 START
+2026-11-17 12:44:03,663 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:11,061 | INFO |   HTTP 200 after 7.4s, 522.3 KB
+2026-11-17 12:44:11,154 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2010_era5_3e2d40994fde.json.gz (125.7 KB)
+2026-11-17 12:44:11,265 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2010_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:11,266 | INFO | [7/8] collie 2011 START
+2026-11-17 12:44:11,266 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:15,143 | INFO |   HTTP 200 after 3.9s, 523.1 KB
+2026-11-17 12:44:15,237 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2011_era5_9d1aeabb85b1.json.gz (126.8 KB)
+2026-11-17 12:44:15,356 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2011_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:15,357 | INFO | [7/8] collie 2012 START
+2026-11-17 12:44:15,358 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:19,202 | INFO |   HTTP 200 after 3.8s, 524.3 KB
+2026-11-17 12:44:19,302 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2012_era5_709f5f6512ce.json.gz (127.3 KB)
+2026-11-17 12:44:19,411 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2012_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:19,412 | INFO | [7/8] collie 2013 START
+2026-11-17 12:44:19,412 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:23,484 | INFO |   HTTP 200 after 4.1s, 524.3 KB
+2026-11-17 12:44:23,578 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2013_era5_7aea738b57b4.json.gz (126.7 KB)
+2026-11-17 12:44:23,690 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2013_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:23,690 | INFO | [7/8] collie 2014 START
+2026-11-17 12:44:23,691 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:27,564 | INFO |   HTTP 200 after 3.9s, 523.9 KB
+2026-11-17 12:44:27,661 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2014_era5_28c543069246.json.gz (127.1 KB)
+2026-11-17 12:44:27,772 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2014_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:27,773 | INFO | [7/8] collie 2015 START
+2026-11-17 12:44:27,773 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:31,407 | INFO |   HTTP 200 after 3.6s, 523.0 KB
+2026-11-17 12:44:31,499 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2015_era5_04b4f1199715.json.gz (125.5 KB)
+2026-11-17 12:44:31,604 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2015_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:31,605 | INFO | [7/8] collie 2016 START
+2026-11-17 12:44:31,605 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:35,626 | INFO |   HTTP 200 after 4.0s, 525.0 KB
+2026-11-17 12:44:35,732 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2016_era5_8c5a3189acf9.json.gz (126.6 KB)
+2026-11-17 12:44:35,839 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2016_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:35,840 | INFO | [7/8] collie 2017 START
+2026-11-17 12:44:35,840 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:39,932 | INFO |   HTTP 200 after 4.1s, 523.2 KB
+2026-11-17 12:44:40,019 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2017_era5_3812cc039162.json.gz (127.2 KB)
+2026-11-17 12:44:40,131 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2017_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:40,132 | INFO | [7/8] collie 2018 START
+2026-11-17 12:44:40,132 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:44,211 | INFO |   HTTP 200 after 4.1s, 523.5 KB
+2026-11-17 12:44:44,302 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2018_era5_222275cd732f.json.gz (126.7 KB)
+2026-11-17 12:44:44,424 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2018_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:44,424 | INFO | [7/8] collie 2019 START
+2026-11-17 12:44:44,425 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:47,421 | INFO |   HTTP 200 after 3.0s, 522.7 KB
+2026-11-17 12:44:47,521 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2019_era5_aceaef57c5e0.json.gz (125.8 KB)
+2026-11-17 12:44:47,630 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2019_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:47,631 | INFO | [7/8] collie 2020 START
+2026-11-17 12:44:47,631 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:52,093 | INFO |   HTTP 200 after 4.5s, 525.3 KB
+2026-11-17 12:44:52,194 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2020_era5_120a15778d6d.json.gz (128.4 KB)
+2026-11-17 12:44:52,301 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2020_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:52,302 | INFO | [7/8] collie 2021 START
+2026-11-17 12:44:52,302 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:56,268 | INFO |   HTTP 200 after 4.0s, 524.1 KB
+2026-11-17 12:44:56,367 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2021_era5_74baf16ad2a1.json.gz (126.7 KB)
+2026-11-17 12:44:56,475 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2021_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:56,476 | INFO | [7/8] collie 2022 START
+2026-11-17 12:44:56,476 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:44:59,387 | INFO |   HTTP 200 after 2.9s, 523.0 KB
+2026-11-17 12:44:59,493 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2022_era5_20df62989d2f.json.gz (126.7 KB)
+2026-11-17 12:44:59,599 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2022_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:44:59,600 | INFO | [7/8] collie 2023 START
+2026-11-17 12:44:59,600 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:03,022 | INFO |   HTTP 200 after 3.4s, 523.4 KB
+2026-11-17 12:45:03,115 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2023_era5_079f6cc2ecff.json.gz (126.0 KB)
+2026-11-17 12:45:03,228 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2023_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:03,229 | INFO | [7/8] collie 2024 START
+2026-11-17 12:45:03,229 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:05,356 | INFO |   HTTP 200 after 2.1s, 524.9 KB
+2026-11-17 12:45:05,441 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2024_era5_bbc5be18b26c.json.gz (126.5 KB)
+2026-11-17 12:45:05,566 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2024_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:05,567 | INFO | [7/8] collie 2025 START
+2026-11-17 12:45:05,568 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:08,085 | INFO |   HTTP 200 after 2.5s, 523.0 KB
+2026-11-17 12:45:08,169 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\collie\2025_era5_aff446598212.json.gz (126.7 KB)
+2026-11-17 12:45:08,276 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\collie\2025_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:09,867 | INFO | [8/8] weddell 2010 START
+2026-11-17 12:45:09,867 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:16,444 | INFO |   HTTP 200 after 6.6s, 534.7 KB
+2026-11-17 12:45:16,532 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2010_era5_cc9b029ff816.json.gz (125.1 KB)
+2026-11-17 12:45:16,639 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2010_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:16,639 | INFO | [8/8] weddell 2011 START
+2026-11-17 12:45:16,639 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:19,938 | INFO |   HTTP 200 after 3.3s, 534.7 KB
+2026-11-17 12:45:20,023 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2011_era5_d6cfb6851539.json.gz (126.5 KB)
+2026-11-17 12:45:20,137 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2011_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:20,137 | INFO | [8/8] weddell 2012 START
+2026-11-17 12:45:20,138 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:23,440 | INFO |   HTTP 200 after 3.3s, 535.2 KB
+2026-11-17 12:45:23,529 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2012_era5_0b0b8d26dbe0.json.gz (125.4 KB)
+2026-11-17 12:45:23,635 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2012_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:23,635 | INFO | [8/8] weddell 2013 START
+2026-11-17 12:45:23,635 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:26,565 | INFO |   HTTP 200 after 2.9s, 533.5 KB
+2026-11-17 12:45:26,652 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2013_era5_6c2d3960c8c6.json.gz (124.8 KB)
+2026-11-17 12:45:26,767 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2013_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:26,767 | INFO | [8/8] weddell 2014 START
+2026-11-17 12:45:26,768 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:29,340 | INFO |   HTTP 200 after 2.6s, 533.4 KB
+2026-11-17 12:45:29,425 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2014_era5_06524e924836.json.gz (125.9 KB)
+2026-11-17 12:45:29,535 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2014_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:29,535 | INFO | [8/8] weddell 2015 START
+2026-11-17 12:45:29,536 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:35,260 | INFO |   HTTP 200 after 5.7s, 533.1 KB
+2026-11-17 12:45:35,348 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2015_era5_9aff53caf06a.json.gz (124.4 KB)
+2026-11-17 12:45:35,457 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2015_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:35,458 | INFO | [8/8] weddell 2016 START
+2026-11-17 12:45:35,458 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:37,923 | INFO |   HTTP 200 after 2.5s, 535.0 KB
+2026-11-17 12:45:38,019 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2016_era5_f7751009887c.json.gz (125.1 KB)
+2026-11-17 12:45:38,168 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2016_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:38,168 | INFO | [8/8] weddell 2017 START
+2026-11-17 12:45:38,168 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:40,017 | INFO |   HTTP 200 after 1.8s, 533.9 KB
+2026-11-17 12:45:40,110 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2017_era5_97b72d908d0c.json.gz (126.1 KB)
+2026-11-17 12:45:40,219 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2017_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:40,220 | INFO | [8/8] weddell 2018 START
+2026-11-17 12:45:40,220 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:41,754 | INFO |   HTTP 200 after 1.5s, 533.7 KB
+2026-11-17 12:45:41,849 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2018_era5_31d1162a1e61.json.gz (125.3 KB)
+2026-11-17 12:45:41,958 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2018_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:41,960 | INFO | [8/8] weddell 2019 START
+2026-11-17 12:45:41,960 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:44,070 | INFO |   HTTP 200 after 2.1s, 533.3 KB
+2026-11-17 12:45:44,162 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2019_era5_0fc900adf17c.json.gz (124.5 KB)
+2026-11-17 12:45:44,274 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2019_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:44,275 | INFO | [8/8] weddell 2020 START
+2026-11-17 12:45:44,275 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:47,781 | INFO |   HTTP 200 after 3.5s, 535.1 KB
+2026-11-17 12:45:47,875 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2020_era5_f7030cb91ca0.json.gz (125.5 KB)
+2026-11-17 12:45:47,982 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2020_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:47,982 | INFO | [8/8] weddell 2021 START
+2026-11-17 12:45:47,982 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:51,810 | INFO |   HTTP 200 after 3.8s, 534.3 KB
+2026-11-17 12:45:51,914 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2021_era5_ad4b4bbd52ce.json.gz (124.0 KB)
+2026-11-17 12:45:52,019 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2021_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:52,019 | INFO | [8/8] weddell 2022 START
+2026-11-17 12:45:52,020 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:55,815 | INFO |   HTTP 200 after 3.8s, 534.4 KB
+2026-11-17 12:45:55,912 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2022_era5_f62480dd1d4f.json.gz (126.1 KB)
+2026-11-17 12:45:56,018 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2022_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:56,018 | INFO | [8/8] weddell 2023 START
+2026-11-17 12:45:56,019 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:45:59,703 | INFO |   HTTP 200 after 3.7s, 534.0 KB
+2026-11-17 12:45:59,793 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2023_era5_5b7ce81568e9.json.gz (125.4 KB)
+2026-11-17 12:45:59,903 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2023_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:45:59,903 | INFO | [8/8] weddell 2024 START
+2026-11-17 12:45:59,904 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:46:05,221 | INFO |   HTTP 200 after 5.3s, 535.4 KB
+2026-11-17 12:46:05,319 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2024_era5_5b2e020d4638.json.gz (125.5 KB)
+2026-11-17 12:46:05,427 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2024_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:46:05,428 | INFO | [8/8] weddell 2025 START
+2026-11-17 12:46:05,428 | INFO |   HTTP GET attempt 1/3 (connect 8s, read 45s)
+2026-11-17 12:46:11,306 | INFO |   HTTP 200 after 5.9s, 535.2 KB
+2026-11-17 12:46:11,405 | INFO |   SAVED ORIGINAL: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\raw_api_json\weddell\2025_era5_5c5ee6b805fc.json.gz (125.6 KB)
+2026-11-17 12:46:11,512 | INFO |   SAVED YEAR: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025\hourly_by_site_year\weddell\2025_365day.csv.gz (8760 hourly rows)
+2026-11-17 12:46:32,518 | INFO | COMPLETE: C:\Users\jonbi\Downloads\DGA_ERA5_Weather\DGA_ERA5_2010_2025
