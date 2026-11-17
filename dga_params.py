@@ -105,7 +105,8 @@ KELP_HA_PER_SITE = 500.0
 KELP_DRIED_T_HA = 3.35                   # Hasselstrom et al. 2020 midpoint (3.14-6.28)
 KELP_DRIED_SHARE_WET = 0.1789
 KELP_KG_CO2E_PER_T_FRESH = 55.2          # cultivation + harvest
-KELP_N_KG_PER_T_DW = 16.0
+KELP_N_KG_PER_T_DW = 16.0               # N per tonne of true dry matter
+KELP_DRIED_MOISTURE = 0.185              # residual moisture in shelf-stable dried kelp (DW = dried x 0.815)
 KELP_KWH_PER_KG_DRIED = 0.6              # handling, pumps, cold store (assumption)
 
 # Drones

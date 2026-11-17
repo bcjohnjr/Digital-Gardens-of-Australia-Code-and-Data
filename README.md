@@ -37,7 +37,7 @@ All files are under GitHub's 25 MB web-upload limit.
    - Windows: `py run_all.py`
    - macOS/Linux: `python3 run_all.py`
 
-The full run takes about one minute. The last line should read
+The full run takes about one minute on a fast laptop and can take several minutes on slower machines. The last line should read
 `RESULT: 159 of 159 values reproduced - CLEAN REPRODUCTION`, and the details are written to
 `dga_reproduction_report.txt`. Nothing is written outside the folder and no `__pycache__` folder is created.
 
